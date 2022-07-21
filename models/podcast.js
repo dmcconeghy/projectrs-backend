@@ -17,17 +17,44 @@ class Podcast {
 
      static async create(data) {
         const result = await db.query(
-              `INSERT INTO podcasts (title,
-                                     description,
-                                     imageUrl,
-                                     episodes)
-               VALUES ($1, $2, $3, $4)
-               RETURNING id, title, description, imageUrl, episodes`,
+              `INSERT INTO podcasts (podcast_id,
+                                    date_created,
+                                    podcast_post_url,
+                                    slug,
+                                    title,
+                                    content,
+                                    excerpt,
+                                    featured_image,
+                                    editor,
+                                    mp3_file_url,
+                                    type,
+                                    transcript)
+               VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
+               RETURNING    podcast_id, 
+                            date_created, 
+                            podcast_post_url, 
+                            slug, 
+                            title, 
+                            content, 
+                            excerpt, 
+                            featured_image, 
+                            editor, 
+                            mp3_file_url, 
+                            type
+                            transcript`,
            [
-             data.title,
-             data.description,
-             data.imageUrl,
-             data.episodes,
+            data.podcast_id,
+            data.date_created,
+            data.podcast_post_url,
+            data.slug,
+            data.title,
+            data.content,
+            data.excerpt,
+            data.featured_image,
+            data.editor,
+            data.mp3_file_url,
+            data.type,
+            data.transcript
            ]);
         let podcast = result.rows[0];
 

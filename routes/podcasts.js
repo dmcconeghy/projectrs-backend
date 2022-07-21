@@ -4,8 +4,9 @@
 
 const express = require("express");
 const { BadRequestError } = require("../expressError");
-const { getPodcasts } = require("../helpers/queries");
+const { getPodcasts, setPodcastJSONArchive } = require("../helpers/queries");
 const Podcast = require("../models/podcast");
+
 
 const router = express.Router({ mergeParams: true });
 
@@ -25,39 +26,39 @@ const router = express.Router({ mergeParams: true });
 */
 
 router.get("/", async function (req, res, next) {
-
+    
     try {
-   
+        
         const episodes = await getPodcasts()
+        console.log("waiting for podcasts")
         const podcasts = []
         
-
         for (let i = 0; i<episodes.data.length; i++) {
             let episode = {"id": episodes.data[i].id, "title": episodes.data[i].title.rendered, "url": episodes.data[i].link}
             podcasts.push(episode)
         }
-        
+
         return res.status(200).json( podcasts );
     } catch (err) {
         return next(err);
     }
 
 
-    try {
-        // const podcasts = await Podcast.findAll();
-        // return res.status(200).json({ podcasts });
-        // return res.json(test);
+    // try {
+    //     // const podcasts = await Podcast.findAll();
+    //     // return res.status(200).json({ podcasts });
+    //     // return res.json(test);
     
-        // console.log(podcasts.data)
-        // const title = podcasts.data.title.rendered;
-        // const author = podcasts.data.author; 
-        // const contributors = podcasts.data.acf.persons; 
-        // const mp3 = podcasts.data.acf.wp_media_location;
-        // const mini = { title, author, contributors, mp3 }
-        return res.status(200).json( podcasts.data );
-    } catch (err) {
-        return next(err);
-    }
+    //     // console.log(podcasts.data)
+    //     // const title = podcasts.data.title.rendered;
+    //     // const author = podcasts.data.author; 
+    //     // const contributors = podcasts.data.acf.persons; 
+    //     // const mp3 = podcasts.data.acf.wp_media_location;
+    //     // const mini = { title, author, contributors, mp3 }
+    //     return res.status(200).json( podcasts.data );
+    // } catch (err) {
+    //     return next(err);
+    // }
 });
 
 module.exports = router

@@ -9,8 +9,10 @@ const { NotFoundError } = require("./expressError");
 const podcastsEpisodes = require("./routes/podcasts");
 const podcastsTags = require("./routes/tags");
 const homeRoutes = require("./routes/home");
+const responsesRoutes = require("./routes/responses");
+const contributorsRoute = require("./routes/contributors");
+const testRoutes = require("./routes/test")
 const morgan = require("morgan");
-const { getPodcasts } = require("./helpers/queries");
 
 const app = express();
 
@@ -21,8 +23,11 @@ app.use(express.json());
 app.use(morgan("tiny"));
 
 app.use("/podcasts", podcastsEpisodes);
-app.use(homeRoutes)
-app.use("/tags", podcastsTags)
+app.use(homeRoutes);
+app.use("/tags", podcastsTags);
+app.use("/responses", responsesRoutes);
+app.use("/contributors", contributorsRoute);
+app.use("/test", testRoutes);
 
 /** Handle 404 errors -- this matches everything */
 app.use(function (req, res, next) {
