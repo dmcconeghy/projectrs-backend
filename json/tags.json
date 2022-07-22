@@ -1,0 +1,3920 @@
+[
+  {
+    "tag_id": 2777,
+    "name": "5 Mins Series",
+    "slug": "5-mins-series",
+    "count": 0
+  },
+  {
+    "tag_id": 124,
+    "name": "AAR",
+    "slug": "aar",
+    "count": 10
+  },
+  {
+    "tag_id": 2695,
+    "name": "Abortion",
+    "slug": "abortion",
+    "count": 4
+  },
+  {
+    "tag_id": 316,
+    "name": "Academia",
+    "slug": "academia",
+    "count": 40
+  },
+  {
+    "tag_id": 50,
+    "name": "Academic",
+    "slug": "academic",
+    "count": 7
+  },
+  {
+    "tag_id": 1401,
+    "name": "academic discourse",
+    "slug": "academic-discourse",
+    "count": 3
+  },
+  {
+    "tag_id": 1188,
+    "name": "Academic Study of Religion",
+    "slug": "academic-study-of-religion",
+    "count": 8
+  },
+  {
+    "tag_id": 2756,
+    "name": "Activism",
+    "slug": "activism",
+    "count": 2
+  },
+  {
+    "tag_id": 2612,
+    "name": "Aesthetics",
+    "slug": "aesthetics",
+    "count": 1
+  },
+  {
+    "tag_id": 2679,
+    "name": "Affect",
+    "slug": "affect",
+    "count": 1
+  },
+  {
+    "tag_id": 1080,
+    "name": "Africa",
+    "slug": "africa",
+    "count": 3
+  },
+  {
+    "tag_id": 2684,
+    "name": "Africana",
+    "slug": "africana",
+    "count": 1
+  },
+  {
+    "tag_id": 2570,
+    "name": "Afro-American Religions",
+    "slug": "afro-american-religions",
+    "count": 2
+  },
+  {
+    "tag_id": 2715,
+    "name": "Afro-Caribbean Religions",
+    "slug": "afro-caribbean-religions",
+    "count": 1
+  },
+  {
+    "tag_id": 617,
+    "name": "Agnosticism",
+    "slug": "agnosticism",
+    "count": 4
+  },
+  {
+    "tag_id": 2579,
+    "name": "agriculture",
+    "slug": "agriculture",
+    "count": 1
+  },
+  {
+    "tag_id": 2749,
+    "name": "AI",
+    "slug": "ai",
+    "count": 1
+  },
+  {
+    "tag_id": 1536,
+    "name": "alternative spirituality",
+    "slug": "alternative-spirituality",
+    "count": 4
+  },
+  {
+    "tag_id": 250,
+    "name": "America",
+    "slug": "america",
+    "count": 21
+  },
+  {
+    "tag_id": 1486,
+    "name": "American Academy of Religion",
+    "slug": "american-academy-of-religion",
+    "count": 5
+  },
+  {
+    "tag_id": 1079,
+    "name": "American religion",
+    "slug": "american-religion",
+    "count": 18
+  },
+  {
+    "tag_id": 907,
+    "name": "American religious history",
+    "slug": "american-religious-history",
+    "count": 7
+  },
+  {
+    "tag_id": 2244,
+    "name": "Amma",
+    "slug": "amma",
+    "count": 3
+  },
+  {
+    "tag_id": 2692,
+    "name": "Anachronism",
+    "slug": "anachronism",
+    "count": 1
+  },
+  {
+    "tag_id": 891,
+    "name": "angels",
+    "slug": "angels",
+    "count": 3
+  },
+  {
+    "tag_id": 170,
+    "name": "Animism",
+    "slug": "animism",
+    "count": 7
+  },
+  {
+    "tag_id": 1070,
+    "name": "anthology",
+    "slug": "anthology",
+    "count": 4
+  },
+  {
+    "tag_id": 210,
+    "name": "Anthropology",
+    "slug": "anthropology",
+    "count": 34
+  },
+  {
+    "tag_id": 1762,
+    "name": "Anthropology of Religion",
+    "slug": "anthropology-of-religion",
+    "count": 7
+  },
+  {
+    "tag_id": 2709,
+    "name": "anti-religious legislation",
+    "slug": "anti-religious-legislation",
+    "count": 1
+  },
+  {
+    "tag_id": 2605,
+    "name": "Anti-Semitism",
+    "slug": "anti-semitism",
+    "count": 0
+  },
+  {
+    "tag_id": 1745,
+    "name": "Apocalypse",
+    "slug": "apocalypse",
+    "count": 6
+  },
+  {
+    "tag_id": 2686,
+    "name": "apocalyptic thought",
+    "slug": "apocalyptic-thought",
+    "count": 1
+  },
+  {
+    "tag_id": 2675,
+    "name": "Archaeology",
+    "slug": "archaeology",
+    "count": 1
+  },
+  {
+    "tag_id": 2818,
+    "name": "Archive",
+    "slug": "archive",
+    "count": 1
+  },
+  {
+    "tag_id": 2588,
+    "name": "Area Studies",
+    "slug": "area-studies",
+    "count": 1
+  },
+  {
+    "tag_id": 674,
+    "name": "Art",
+    "slug": "art",
+    "count": 7
+  },
+  {
+    "tag_id": 1619,
+    "name": "Artificial Intelligence",
+    "slug": "artificial-intelligence",
+    "count": 9
+  },
+  {
+    "tag_id": 497,
+    "name": "Astrology",
+    "slug": "astrology",
+    "count": 3
+  },
+  {
+    "tag_id": 127,
+    "name": "Atheism",
+    "slug": "atheism",
+    "count": 31
+  },
+  {
+    "tag_id": 313,
+    "name": "Australia",
+    "slug": "australia",
+    "count": 8
+  },
+  {
+    "tag_id": 1084,
+    "name": "Authenticity",
+    "slug": "authenticity",
+    "count": 9
+  },
+  {
+    "tag_id": 99,
+    "name": "Authority",
+    "slug": "authority",
+    "count": 15
+  },
+  {
+    "tag_id": 985,
+    "name": "awards",
+    "slug": "awards",
+    "count": 13
+  },
+  {
+    "tag_id": 2742,
+    "name": "Ayahuasca",
+    "slug": "ayahuasca",
+    "count": 2
+  },
+  {
+    "tag_id": 1147,
+    "name": "Aztec",
+    "slug": "aztec",
+    "count": 3
+  },
+  {
+    "tag_id": 2775,
+    "name": "Baptism",
+    "slug": "baptism",
+    "count": 1
+  },
+  {
+    "tag_id": 68,
+    "name": "BASR",
+    "slug": "basr",
+    "count": 6
+  },
+  {
+    "tag_id": 2571,
+    "name": "BDSM",
+    "slug": "bdsm",
+    "count": 1
+  },
+  {
+    "tag_id": 83,
+    "name": "Belief",
+    "slug": "belief",
+    "count": 30
+  },
+  {
+    "tag_id": 212,
+    "name": "Bias",
+    "slug": "bias",
+    "count": 5
+  },
+  {
+    "tag_id": 528,
+    "name": "Bible",
+    "slug": "bible",
+    "count": 3
+  },
+  {
+    "tag_id": 529,
+    "name": "Biblical Studies",
+    "slug": "biblical-studies",
+    "count": 3
+  },
+  {
+    "tag_id": 2621,
+    "name": "Black Church",
+    "slug": "black-church",
+    "count": 1
+  },
+  {
+    "tag_id": 1305,
+    "name": "Body",
+    "slug": "body",
+    "count": 8
+  },
+  {
+    "tag_id": 2817,
+    "name": "Borderlands",
+    "slug": "borderlands",
+    "count": 1
+  },
+  {
+    "tag_id": 2644,
+    "name": "Boundary Formation",
+    "slug": "boundary-formation",
+    "count": 2
+  },
+  {
+    "tag_id": 2805,
+    "name": "Branch Davidians",
+    "slug": "branch-davidians",
+    "count": 1
+  },
+  {
+    "tag_id": 722,
+    "name": "Brazil",
+    "slug": "brazil",
+    "count": 3
+  },
+  {
+    "tag_id": 756,
+    "name": "Bricolage",
+    "slug": "bricolage",
+    "count": 4
+  },
+  {
+    "tag_id": 579,
+    "name": "Britain",
+    "slug": "britain",
+    "count": 3
+  },
+  {
+    "tag_id": 417,
+    "name": "Buddhism",
+    "slug": "buddhism",
+    "count": 22
+  },
+  {
+    "tag_id": 1289,
+    "name": "Buddhism in the West",
+    "slug": "buddhism-in-the-west",
+    "count": 3
+  },
+  {
+    "tag_id": 1347,
+    "name": "Buddhist Studies",
+    "slug": "buddhist-studies",
+    "count": 9
+  },
+  {
+    "tag_id": 2646,
+    "name": "Burial Sites",
+    "slug": "burial-sites",
+    "count": 1
+  },
+  {
+    "tag_id": 1608,
+    "name": "call for papers",
+    "slug": "call-for-papers",
+    "count": 3
+  },
+  {
+    "tag_id": 391,
+    "name": "canada",
+    "slug": "canada",
+    "count": 6
+  },
+  {
+    "tag_id": 2664,
+    "name": "Cancel Culture",
+    "slug": "cancel-culture",
+    "count": 0
+  },
+  {
+    "tag_id": 2673,
+    "name": "Canon",
+    "slug": "canon",
+    "count": 2
+  },
+  {
+    "tag_id": 912,
+    "name": "Capitalism",
+    "slug": "capitalism",
+    "count": 6
+  },
+  {
+    "tag_id": 2809,
+    "name": "Captain Kirk",
+    "slug": "captain-kirk",
+    "count": 1
+  },
+  {
+    "tag_id": 2808,
+    "name": "Captain Krik",
+    "slug": "captain-krik",
+    "count": 0
+  },
+  {
+    "tag_id": 96,
+    "name": "Career",
+    "slug": "career",
+    "count": 3
+  },
+  {
+    "tag_id": 2794,
+    "name": "Caribbean religions",
+    "slug": "caribbean-religions",
+    "count": 1
+  },
+  {
+    "tag_id": 2665,
+    "name": "Caste System",
+    "slug": "caste-system",
+    "count": 1
+  },
+  {
+    "tag_id": 332,
+    "name": "categories",
+    "slug": "categories",
+    "count": 6
+  },
+  {
+    "tag_id": 2631,
+    "name": "Categorization",
+    "slug": "categorization",
+    "count": 7
+  },
+  {
+    "tag_id": 917,
+    "name": "category formation",
+    "slug": "category-formation",
+    "count": 13
+  },
+  {
+    "tag_id": 2697,
+    "name": "Category of Religion",
+    "slug": "category-of-religion",
+    "count": 3
+  },
+  {
+    "tag_id": 1215,
+    "name": "Catholicism",
+    "slug": "catholicism",
+    "count": 20
+  },
+  {
+    "tag_id": 1873,
+    "name": "censamm",
+    "slug": "censamm",
+    "count": 3
+  },
+  {
+    "tag_id": 306,
+    "name": "Census",
+    "slug": "census",
+    "count": 6
+  },
+  {
+    "tag_id": 1593,
+    "name": "cfp",
+    "slug": "cfp",
+    "count": 11
+  },
+  {
+    "tag_id": 2764,
+    "name": "Chaplaincy",
+    "slug": "chaplaincy",
+    "count": 1
+  },
+  {
+    "tag_id": 468,
+    "name": "Charity",
+    "slug": "charity",
+    "count": 5
+  },
+  {
+    "tag_id": 2632,
+    "name": "Christian Origins",
+    "slug": "christian-origins",
+    "count": 1
+  },
+  {
+    "tag_id": 1242,
+    "name": "Christian Reconstruction",
+    "slug": "christian-reconstruction",
+    "count": 3
+  },
+  {
+    "tag_id": 121,
+    "name": "christianity",
+    "slug": "christianity",
+    "count": 38
+  },
+  {
+    "tag_id": 662,
+    "name": "Christmas",
+    "slug": "christmas",
+    "count": 1
+  },
+  {
+    "tag_id": 132,
+    "name": "Church",
+    "slug": "church",
+    "count": 3
+  },
+  {
+    "tag_id": 2765,
+    "name": "Church and state",
+    "slug": "church-and-state",
+    "count": 1
+  },
+  {
+    "tag_id": 2761,
+    "name": "CIA",
+    "slug": "cia",
+    "count": 1
+  },
+  {
+    "tag_id": 1035,
+    "name": "Civil Religion",
+    "slug": "civil-religion",
+    "count": 4
+  },
+  {
+    "tag_id": 2601,
+    "name": "civil rights",
+    "slug": "civil-rights",
+    "count": 0
+  },
+  {
+    "tag_id": 2667,
+    "name": "Class",
+    "slug": "class",
+    "count": 1
+  },
+  {
+    "tag_id": 2694,
+    "name": "Classification",
+    "slug": "classification",
+    "count": 8
+  },
+  {
+    "tag_id": 1265,
+    "name": "Clifford Geertz",
+    "slug": "clifford-geertz",
+    "count": 4
+  },
+  {
+    "tag_id": 2581,
+    "name": "climate change",
+    "slug": "climate-change",
+    "count": 6
+  },
+  {
+    "tag_id": 2551,
+    "name": "Clothing and Fashion",
+    "slug": "clothing-and-fashion",
+    "count": 1
+  },
+  {
+    "tag_id": 424,
+    "name": "Cognition",
+    "slug": "cognition",
+    "count": 13
+  },
+  {
+    "tag_id": 79,
+    "name": "Cognitive Approaches",
+    "slug": "cognitive-approaches",
+    "count": 6
+  },
+  {
+    "tag_id": 425,
+    "name": "Cognitive Science",
+    "slug": "cognitive-science",
+    "count": 13
+  },
+  {
+    "tag_id": 802,
+    "name": "cognitive science of religion",
+    "slug": "cognitive-science-of-religion",
+    "count": 31
+  },
+  {
+    "tag_id": 2543,
+    "name": "Cognitive Study of Religion",
+    "slug": "cognitive-study-of-religion",
+    "count": 1
+  },
+  {
+    "tag_id": 2565,
+    "name": "Collaboration",
+    "slug": "collaboration",
+    "count": 0
+  },
+  {
+    "tag_id": 548,
+    "name": "colonialism",
+    "slug": "colonialism",
+    "count": 21
+  },
+  {
+    "tag_id": 776,
+    "name": "Comedy",
+    "slug": "comedy",
+    "count": 4
+  },
+  {
+    "tag_id": 701,
+    "name": "comics",
+    "slug": "comics",
+    "count": 5
+  },
+  {
+    "tag_id": 2647,
+    "name": "Commodification",
+    "slug": "commodification",
+    "count": 1
+  },
+  {
+    "tag_id": 1718,
+    "name": "communism",
+    "slug": "communism",
+    "count": 3
+  },
+  {
+    "tag_id": 697,
+    "name": "Community",
+    "slug": "community",
+    "count": 3
+  },
+  {
+    "tag_id": 2563,
+    "name": "Community-Based Service Learning",
+    "slug": "community-based-service-learning",
+    "count": 1
+  },
+  {
+    "tag_id": 2759,
+    "name": "Comparative Religions",
+    "slug": "comparative-religions",
+    "count": 1
+  },
+  {
+    "tag_id": 2656,
+    "name": "comparative research",
+    "slug": "comparative-research",
+    "count": 1
+  },
+  {
+    "tag_id": 975,
+    "name": "comparativism",
+    "slug": "comparativism",
+    "count": 4
+  },
+  {
+    "tag_id": 2589,
+    "name": "comparison",
+    "slug": "comparison",
+    "count": 4
+  },
+  {
+    "tag_id": 1672,
+    "name": "conference",
+    "slug": "conference",
+    "count": 13
+  },
+  {
+    "tag_id": 808,
+    "name": "consilience",
+    "slug": "consilience",
+    "count": 3
+  },
+  {
+    "tag_id": 2689,
+    "name": "Conspiracy",
+    "slug": "conspiracy",
+    "count": 2
+  },
+  {
+    "tag_id": 2564,
+    "name": "Conspiracy Theory",
+    "slug": "conspiracy-theory",
+    "count": 4
+  },
+  {
+    "tag_id": 685,
+    "name": "Consumerism",
+    "slug": "consumerism",
+    "count": 6
+  },
+  {
+    "tag_id": 2166,
+    "name": "Continental Philosophy",
+    "slug": "continental-philosophy",
+    "count": 3
+  },
+  {
+    "tag_id": 1009,
+    "name": "conversion",
+    "slug": "conversion",
+    "count": 8
+  },
+  {
+    "tag_id": 2573,
+    "name": "covid-19",
+    "slug": "covid-19",
+    "count": 5
+  },
+  {
+    "tag_id": 1173,
+    "name": "critical",
+    "slug": "critical",
+    "count": 9
+  },
+  {
+    "tag_id": 2743,
+    "name": "Critical approaches",
+    "slug": "critical-approaches",
+    "count": 1
+  },
+  {
+    "tag_id": 1434,
+    "name": "critical discourse analysis",
+    "slug": "critical-discourse-analysis",
+    "count": 5
+  },
+  {
+    "tag_id": 2663,
+    "name": "Critical Gender Theory",
+    "slug": "critical-gender-theory",
+    "count": 1
+  },
+  {
+    "tag_id": 2752,
+    "name": "Critical Humanism",
+    "slug": "critical-humanism",
+    "count": 2
+  },
+  {
+    "tag_id": 2766,
+    "name": "Critical Islam",
+    "slug": "critical-islam",
+    "count": 1
+  },
+  {
+    "tag_id": 2666,
+    "name": "Critical Race Theory",
+    "slug": "critical-race-theory",
+    "count": 1
+  },
+  {
+    "tag_id": 2780,
+    "name": "Critical REL",
+    "slug": "critical-rel",
+    "count": 1
+  },
+  {
+    "tag_id": 358,
+    "name": "critical religion",
+    "slug": "critical-religion",
+    "count": 13
+  },
+  {
+    "tag_id": 2740,
+    "name": "Critical Study of Religion",
+    "slug": "critical-study-of-religion",
+    "count": 2
+  },
+  {
+    "tag_id": 1187,
+    "name": "Critical theory",
+    "slug": "critical-theory",
+    "count": 19
+  },
+  {
+    "tag_id": 2702,
+    "name": "critique",
+    "slug": "critique",
+    "count": 1
+  },
+  {
+    "tag_id": 1130,
+    "name": "crowley",
+    "slug": "crowley",
+    "count": 3
+  },
+  {
+    "tag_id": 319,
+    "name": "Cults",
+    "slug": "cults",
+    "count": 9
+  },
+  {
+    "tag_id": 832,
+    "name": "cultural evolution",
+    "slug": "cultural-evolution",
+    "count": 3
+  },
+  {
+    "tag_id": 672,
+    "name": "Cultural Product",
+    "slug": "cultural-product",
+    "count": 3
+  },
+  {
+    "tag_id": 665,
+    "name": "Cultural Production",
+    "slug": "cultural-production",
+    "count": 6
+  },
+  {
+    "tag_id": 1074,
+    "name": "cultural transmission",
+    "slug": "cultural-transmission",
+    "count": 4
+  },
+  {
+    "tag_id": 422,
+    "name": "Culture",
+    "slug": "culture",
+    "count": 13
+  },
+  {
+    "tag_id": 2719,
+    "name": "Culture Wars",
+    "slug": "culture-wars",
+    "count": 1
+  },
+  {
+    "tag_id": 2816,
+    "name": "Curanderismo",
+    "slug": "curanderismo",
+    "count": 1
+  },
+  {
+    "tag_id": 274,
+    "name": "Data",
+    "slug": "data",
+    "count": 5
+  },
+  {
+    "tag_id": 176,
+    "name": "Death",
+    "slug": "death",
+    "count": 9
+  },
+  {
+    "tag_id": 2639,
+    "name": "Decolonialism",
+    "slug": "decolonialism",
+    "count": 2
+  },
+  {
+    "tag_id": 2560,
+    "name": "decolonization",
+    "slug": "decolonization",
+    "count": 8
+  },
+  {
+    "tag_id": 1691,
+    "name": "deconstruction",
+    "slug": "deconstruction",
+    "count": 9
+  },
+  {
+    "tag_id": 1290,
+    "name": "deconversion",
+    "slug": "deconversion",
+    "count": 3
+  },
+  {
+    "tag_id": 2541,
+    "name": "defining religion",
+    "slug": "defining-religion",
+    "count": 2
+  },
+  {
+    "tag_id": 249,
+    "name": "Definition",
+    "slug": "definition",
+    "count": 35
+  },
+  {
+    "tag_id": 2409,
+    "name": "degrees in religion",
+    "slug": "degrees-in-religion",
+    "count": 4
+  },
+  {
+    "tag_id": 2586,
+    "name": "deleuze",
+    "slug": "deleuze",
+    "count": 0
+  },
+  {
+    "tag_id": 305,
+    "name": "Demography",
+    "slug": "demography",
+    "count": 6
+  },
+  {
+    "tag_id": 2657,
+    "name": "demonology",
+    "slug": "demonology",
+    "count": 1
+  },
+  {
+    "tag_id": 902,
+    "name": "Demons",
+    "slug": "demons",
+    "count": 5
+  },
+  {
+    "tag_id": 2640,
+    "name": "devotion",
+    "slug": "devotion",
+    "count": 1
+  },
+  {
+    "tag_id": 2711,
+    "name": "Devotionalism",
+    "slug": "devotionalism",
+    "count": 2
+  },
+  {
+    "tag_id": 716,
+    "name": "diaspora",
+    "slug": "diaspora",
+    "count": 7
+  },
+  {
+    "tag_id": 177,
+    "name": "Digital",
+    "slug": "digital",
+    "count": 6
+  },
+  {
+    "tag_id": 1950,
+    "name": "Digital Humanities",
+    "slug": "digital-humanities",
+    "count": 7
+  },
+  {
+    "tag_id": 202,
+    "name": "Digital Religion",
+    "slug": "digital-religion",
+    "count": 9
+  },
+  {
+    "tag_id": 22,
+    "name": "Discordianism",
+    "slug": "discordianism",
+    "count": 3
+  },
+  {
+    "tag_id": 467,
+    "name": "Discourse",
+    "slug": "discourse",
+    "count": 54
+  },
+  {
+    "tag_id": 2658,
+    "name": "discourse analysis",
+    "slug": "discourse-analysis",
+    "count": 3
+  },
+  {
+    "tag_id": 2772,
+    "name": "Disxourse!",
+    "slug": "disxourse",
+    "count": 0
+  },
+  {
+    "tag_id": 142,
+    "name": "Diversity",
+    "slug": "diversity",
+    "count": 6
+  },
+  {
+    "tag_id": 2806,
+    "name": "Doctor Who",
+    "slug": "doctor-who",
+    "count": 1
+  },
+  {
+    "tag_id": 1805,
+    "name": "Donald Trump",
+    "slug": "donald-trump",
+    "count": 3
+  },
+  {
+    "tag_id": 470,
+    "name": "Druidry",
+    "slug": "druidry",
+    "count": 4
+  },
+  {
+    "tag_id": 628,
+    "name": "Durham",
+    "slug": "durham",
+    "count": 3
+  },
+  {
+    "tag_id": 715,
+    "name": "Durkheim",
+    "slug": "durkheim",
+    "count": 6
+  },
+  {
+    "tag_id": 2674,
+    "name": "Early Christianity",
+    "slug": "early-christianity",
+    "count": 2
+  },
+  {
+    "tag_id": 66,
+    "name": "EASR",
+    "slug": "easr",
+    "count": 14
+  },
+  {
+    "tag_id": 1690,
+    "name": "EASR 2017",
+    "slug": "easr-2017",
+    "count": 3
+  },
+  {
+    "tag_id": 2811,
+    "name": "Easter",
+    "slug": "easter",
+    "count": 1
+  },
+  {
+    "tag_id": 2738,
+    "name": "Eastern Christianity",
+    "slug": "eastern-christianity",
+    "count": 1
+  },
+  {
+    "tag_id": 1720,
+    "name": "Eastern Europe",
+    "slug": "eastern-europe",
+    "count": 3
+  },
+  {
+    "tag_id": 32,
+    "name": "edinburgh",
+    "slug": "edinburgh",
+    "count": 4
+  },
+  {
+    "tag_id": 163,
+    "name": "Education",
+    "slug": "education",
+    "count": 14
+  },
+  {
+    "tag_id": 2781,
+    "name": "Elections",
+    "slug": "elections",
+    "count": 1
+  },
+  {
+    "tag_id": 420,
+    "name": "Embodiment",
+    "slug": "embodiment",
+    "count": 7
+  },
+  {
+    "tag_id": 499,
+    "name": "Emerging Church",
+    "slug": "emerging-church",
+    "count": 4
+  },
+  {
+    "tag_id": 1569,
+    "name": "emic/etic",
+    "slug": "emicetic",
+    "count": 6
+  },
+  {
+    "tag_id": 630,
+    "name": "Environment",
+    "slug": "environment",
+    "count": 12
+  },
+  {
+    "tag_id": 2578,
+    "name": "environmental ethics",
+    "slug": "environmental-ethics",
+    "count": 3
+  },
+  {
+    "tag_id": 2637,
+    "name": "Envorinment",
+    "slug": "envorinment",
+    "count": 1
+  },
+  {
+    "tag_id": 217,
+    "name": "Epistemology",
+    "slug": "epistemology",
+    "count": 7
+  },
+  {
+    "tag_id": 442,
+    "name": "Esotericism",
+    "slug": "esotericism",
+    "count": 12
+  },
+  {
+    "tag_id": 2722,
+    "name": "essentialism",
+    "slug": "essentialism",
+    "count": 2
+  },
+  {
+    "tag_id": 205,
+    "name": "Ethics",
+    "slug": "ethics",
+    "count": 19
+  },
+  {
+    "tag_id": 146,
+    "name": "Ethnicity",
+    "slug": "ethnicity",
+    "count": 4
+  },
+  {
+    "tag_id": 610,
+    "name": "ethnography",
+    "slug": "ethnography",
+    "count": 23
+  },
+  {
+    "tag_id": 2652,
+    "name": "ethnohistory",
+    "slug": "ethnohistory",
+    "count": 1
+  },
+  {
+    "tag_id": 341,
+    "name": "europe",
+    "slug": "europe",
+    "count": 15
+  },
+  {
+    "tag_id": 1580,
+    "name": "evangelical",
+    "slug": "evangelical",
+    "count": 7
+  },
+  {
+    "tag_id": 1760,
+    "name": "Evangelical Christianity",
+    "slug": "evangelical-christianity",
+    "count": 4
+  },
+  {
+    "tag_id": 1957,
+    "name": "Evangelicalism",
+    "slug": "evangelicalism",
+    "count": 4
+  },
+  {
+    "tag_id": 1855,
+    "name": "Evangelicals",
+    "slug": "evangelicals",
+    "count": 9
+  },
+  {
+    "tag_id": 706,
+    "name": "Evolution",
+    "slug": "evolution",
+    "count": 11
+  },
+  {
+    "tag_id": 1196,
+    "name": "evolutionary theory",
+    "slug": "evolutionary-theory",
+    "count": 4
+  },
+  {
+    "tag_id": 567,
+    "name": "experience",
+    "slug": "experience",
+    "count": 14
+  },
+  {
+    "tag_id": 1162,
+    "name": "Explanation",
+    "slug": "explanation",
+    "count": 3
+  },
+  {
+    "tag_id": 137,
+    "name": "Faith",
+    "slug": "faith",
+    "count": 3
+  },
+  {
+    "tag_id": 2549,
+    "name": "fashion",
+    "slug": "fashion",
+    "count": 0
+  },
+  {
+    "tag_id": 258,
+    "name": "Fellowships",
+    "slug": "fellowships",
+    "count": 10
+  },
+  {
+    "tag_id": 965,
+    "name": "feminism",
+    "slug": "feminism",
+    "count": 7
+  },
+  {
+    "tag_id": 2574,
+    "name": "festivals and pilgrimages",
+    "slug": "festivals-and-pilgrimages",
+    "count": 1
+  },
+  {
+    "tag_id": 589,
+    "name": "fetish",
+    "slug": "fetish",
+    "count": 4
+  },
+  {
+    "tag_id": 2562,
+    "name": "Fetishism; Ritual; Populism; Afro-American Religion; BDSM",
+    "slug": "fetishism-ritual-populism-afro-american-religion-bdsm",
+    "count": 0
+  },
+  {
+    "tag_id": 268,
+    "name": "fiction",
+    "slug": "fiction",
+    "count": 5
+  },
+  {
+    "tag_id": 2544,
+    "name": "Fiction and Religion",
+    "slug": "fiction-and-religion",
+    "count": 1
+  },
+  {
+    "tag_id": 23,
+    "name": "Fiction-based Religions",
+    "slug": "fiction-based-religions",
+    "count": 2
+  },
+  {
+    "tag_id": 215,
+    "name": "Fieldwork",
+    "slug": "fieldwork",
+    "count": 7
+  },
+  {
+    "tag_id": 640,
+    "name": "Film",
+    "slug": "film",
+    "count": 6
+  },
+  {
+    "tag_id": 582,
+    "name": "Finland",
+    "slug": "finland",
+    "count": 3
+  },
+  {
+    "tag_id": 770,
+    "name": "fiona bowie",
+    "slug": "fiona-bowie",
+    "count": 3
+  },
+  {
+    "tag_id": 1483,
+    "name": "First Amendment",
+    "slug": "first-amendment",
+    "count": 3
+  },
+  {
+    "tag_id": 383,
+    "name": "Folk Religion",
+    "slug": "folk-religion",
+    "count": 4
+  },
+  {
+    "tag_id": 1317,
+    "name": "Folklore",
+    "slug": "folklore",
+    "count": 5
+  },
+  {
+    "tag_id": 2580,
+    "name": "food ethics",
+    "slug": "food-ethics",
+    "count": 1
+  },
+  {
+    "tag_id": 2823,
+    "name": "Free Speech",
+    "slug": "free-speech",
+    "count": 1
+  },
+  {
+    "tag_id": 2828,
+    "name": "Funding",
+    "slug": "funding",
+    "count": 0
+  },
+  {
+    "tag_id": 587,
+    "name": "gaia",
+    "slug": "gaia",
+    "count": 3
+  },
+  {
+    "tag_id": 98,
+    "name": "gender",
+    "slug": "gender",
+    "count": 46
+  },
+  {
+    "tag_id": 2734,
+    "name": "Genealogy",
+    "slug": "genealogy",
+    "count": 1
+  },
+  {
+    "tag_id": 621,
+    "name": "Geography",
+    "slug": "geography",
+    "count": 5
+  },
+  {
+    "tag_id": 586,
+    "name": "gifford lectures",
+    "slug": "gifford-lectures",
+    "count": 4
+  },
+  {
+    "tag_id": 2587,
+    "name": "Global South",
+    "slug": "global-south",
+    "count": 1
+  },
+  {
+    "tag_id": 556,
+    "name": "Globalization",
+    "slug": "globalization",
+    "count": 8
+  },
+  {
+    "tag_id": 2769,
+    "name": "Gnosis",
+    "slug": "gnosis",
+    "count": 1
+  },
+  {
+    "tag_id": 2735,
+    "name": "Gnosticism",
+    "slug": "gnosticism",
+    "count": 2
+  },
+  {
+    "tag_id": 2681,
+    "name": "Gospels",
+    "slug": "gospels",
+    "count": 1
+  },
+  {
+    "tag_id": 2699,
+    "name": "Governance",
+    "slug": "governance",
+    "count": 1
+  },
+  {
+    "tag_id": 664,
+    "name": "Gurdjieff",
+    "slug": "gurdjieff",
+    "count": 3
+  },
+  {
+    "tag_id": 1128,
+    "name": "guru",
+    "slug": "guru",
+    "count": 4
+  },
+  {
+    "tag_id": 2745,
+    "name": "healing",
+    "slug": "healing",
+    "count": 2
+  },
+  {
+    "tag_id": 696,
+    "name": "Health",
+    "slug": "health",
+    "count": 9
+  },
+  {
+    "tag_id": 727,
+    "name": "Hegemony",
+    "slug": "hegemony",
+    "count": 6
+  },
+  {
+    "tag_id": 2595,
+    "name": "heritage",
+    "slug": "heritage",
+    "count": 1
+  },
+  {
+    "tag_id": 93,
+    "name": "Higher Education",
+    "slug": "higher-education",
+    "count": 16
+  },
+  {
+    "tag_id": 2696,
+    "name": "Hijab",
+    "slug": "hijab",
+    "count": 2
+  },
+  {
+    "tag_id": 1650,
+    "name": "hinduism",
+    "slug": "hinduism",
+    "count": 10
+  },
+  {
+    "tag_id": 671,
+    "name": "Historical Approaches",
+    "slug": "historical-approaches",
+    "count": 8
+  },
+  {
+    "tag_id": 2693,
+    "name": "Historical Jesus",
+    "slug": "historical-jesus",
+    "count": 1
+  },
+  {
+    "tag_id": 2737,
+    "name": "Historiography",
+    "slug": "historiography",
+    "count": 1
+  },
+  {
+    "tag_id": 308,
+    "name": "History",
+    "slug": "history",
+    "count": 23
+  },
+  {
+    "tag_id": 2736,
+    "name": "History of Religions",
+    "slug": "history-of-religions",
+    "count": 1
+  },
+  {
+    "tag_id": 2542,
+    "name": "History of Religious Studies",
+    "slug": "history-of-religious-studies",
+    "count": 1
+  },
+  {
+    "tag_id": 2554,
+    "name": "horror",
+    "slug": "horror",
+    "count": 1
+  },
+  {
+    "tag_id": 2659,
+    "name": "human",
+    "slug": "human",
+    "count": 0
+  },
+  {
+    "tag_id": 2623,
+    "name": "Human Rights",
+    "slug": "human-rights",
+    "count": 1
+  },
+  {
+    "tag_id": 659,
+    "name": "Humanism",
+    "slug": "humanism",
+    "count": 4
+  },
+  {
+    "tag_id": 663,
+    "name": "Humour",
+    "slug": "humour",
+    "count": 3
+  },
+  {
+    "tag_id": 1856,
+    "name": "Humour Studies",
+    "slug": "humour-studies",
+    "count": 3
+  },
+  {
+    "tag_id": 2798,
+    "name": "Hylosemiotics",
+    "slug": "hylosemiotics",
+    "count": 1
+  },
+  {
+    "tag_id": 151,
+    "name": "IAHR",
+    "slug": "iahr",
+    "count": 3
+  },
+  {
+    "tag_id": 182,
+    "name": "Identity",
+    "slug": "identity",
+    "count": 38
+  },
+  {
+    "tag_id": 1048,
+    "name": "Identity Construction",
+    "slug": "identity-construction",
+    "count": 9
+  },
+  {
+    "tag_id": 1539,
+    "name": "Ideology",
+    "slug": "ideology",
+    "count": 10
+  },
+  {
+    "tag_id": 2604,
+    "name": "Ilhan Omar",
+    "slug": "ilhan-omar",
+    "count": 0
+  },
+  {
+    "tag_id": 729,
+    "name": "immigration",
+    "slug": "immigration",
+    "count": 7
+  },
+  {
+    "tag_id": 2721,
+    "name": "imperialism",
+    "slug": "imperialism",
+    "count": 1
+  },
+  {
+    "tag_id": 1492,
+    "name": "implicit religion",
+    "slug": "implicit-religion",
+    "count": 3
+  },
+  {
+    "tag_id": 1393,
+    "name": "India",
+    "slug": "india",
+    "count": 5
+  },
+  {
+    "tag_id": 475,
+    "name": "Indigeneity",
+    "slug": "indigeneity",
+    "count": 4
+  },
+  {
+    "tag_id": 943,
+    "name": "indigenous",
+    "slug": "indigenous",
+    "count": 4
+  },
+  {
+    "tag_id": 2654,
+    "name": "indigenous people",
+    "slug": "indigenous-people",
+    "count": 1
+  },
+  {
+    "tag_id": 2744,
+    "name": "indigenous peoples",
+    "slug": "indigenous-peoples",
+    "count": 1
+  },
+  {
+    "tag_id": 949,
+    "name": "indigenous religion",
+    "slug": "indigenous-religion",
+    "count": 7
+  },
+  {
+    "tag_id": 1842,
+    "name": "indigenous religions",
+    "slug": "indigenous-religions",
+    "count": 4
+  },
+  {
+    "tag_id": 2668,
+    "name": "Individualism",
+    "slug": "individualism",
+    "count": 2
+  },
+  {
+    "tag_id": 321,
+    "name": "INFORM",
+    "slug": "inform",
+    "count": 4
+  },
+  {
+    "tag_id": 211,
+    "name": "insider/outsider",
+    "slug": "insideroutsider",
+    "count": 8
+  },
+  {
+    "tag_id": 883,
+    "name": "Interdisciplinarity",
+    "slug": "interdisciplinarity",
+    "count": 12
+  },
+  {
+    "tag_id": 439,
+    "name": "Internet",
+    "slug": "internet",
+    "count": 6
+  },
+  {
+    "tag_id": 2790,
+    "name": "Introduction",
+    "slug": "introduction",
+    "count": 2
+  },
+  {
+    "tag_id": 20,
+    "name": "Invented Religions",
+    "slug": "invented-religions",
+    "count": 6
+  },
+  {
+    "tag_id": 88,
+    "name": "Ireland",
+    "slug": "ireland",
+    "count": 6
+  },
+  {
+    "tag_id": 18,
+    "name": "Islam",
+    "slug": "islam",
+    "count": 50
+  },
+  {
+    "tag_id": 1684,
+    "name": "islamic studies",
+    "slug": "islamic-studies",
+    "count": 8
+  },
+  {
+    "tag_id": 2649,
+    "name": "Islamism",
+    "slug": "islamism",
+    "count": 1
+  },
+  {
+    "tag_id": 2265,
+    "name": "Islamophobia",
+    "slug": "islamophobia",
+    "count": 4
+  },
+  {
+    "tag_id": 181,
+    "name": "Israel",
+    "slug": "israel",
+    "count": 3
+  },
+  {
+    "tag_id": 2624,
+    "name": "Jainism",
+    "slug": "jainism",
+    "count": 2
+  },
+  {
+    "tag_id": 1097,
+    "name": "Japan",
+    "slug": "japan",
+    "count": 20
+  },
+  {
+    "tag_id": 452,
+    "name": "jehovah's witnesses",
+    "slug": "jehovahs-witnesses",
+    "count": 2
+  },
+  {
+    "tag_id": 2802,
+    "name": "Jehovah&#039;s Witness",
+    "slug": "jehovahs-witness",
+    "count": 1
+  },
+  {
+    "tag_id": 2704,
+    "name": "Jesuits",
+    "slug": "jesuits",
+    "count": 1
+  },
+  {
+    "tag_id": 1388,
+    "name": "Jewish Studies",
+    "slug": "jewish-studies",
+    "count": 8
+  },
+  {
+    "tag_id": 1710,
+    "name": "Jonathan Z. Smith",
+    "slug": "jonathan-z-smith",
+    "count": 3
+  },
+  {
+    "tag_id": 1673,
+    "name": "journal",
+    "slug": "journal",
+    "count": 8
+  },
+  {
+    "tag_id": 180,
+    "name": "Judaism",
+    "slug": "judaism",
+    "count": 9
+  },
+  {
+    "tag_id": 740,
+    "name": "Jung",
+    "slug": "jung",
+    "count": 4
+  },
+  {
+    "tag_id": 2590,
+    "name": "kabbalah",
+    "slug": "kabbalah",
+    "count": 1
+  },
+  {
+    "tag_id": 2741,
+    "name": "Knowledge",
+    "slug": "knowledge",
+    "count": 1
+  },
+  {
+    "tag_id": 284,
+    "name": "lancaster",
+    "slug": "lancaster",
+    "count": 2
+  },
+  {
+    "tag_id": 2701,
+    "name": "language",
+    "slug": "language",
+    "count": 1
+  },
+  {
+    "tag_id": 2771,
+    "name": "Late Antiquity",
+    "slug": "late-antiquity",
+    "count": 1
+  },
+  {
+    "tag_id": 141,
+    "name": "Latin America",
+    "slug": "latin-america",
+    "count": 4
+  },
+  {
+    "tag_id": 2584,
+    "name": "latour",
+    "slug": "latour",
+    "count": 0
+  },
+  {
+    "tag_id": 2804,
+    "name": "Latter Day Saints",
+    "slug": "latter-day-saints",
+    "count": 1
+  },
+  {
+    "tag_id": 469,
+    "name": "Law",
+    "slug": "law",
+    "count": 18
+  },
+  {
+    "tag_id": 2763,
+    "name": "legal studies",
+    "slug": "legal-studies",
+    "count": 1
+  },
+  {
+    "tag_id": 2600,
+    "name": "LGBT rights",
+    "slug": "lgbt-rights",
+    "count": 0
+  },
+  {
+    "tag_id": 2774,
+    "name": "LGBTQ",
+    "slug": "lgbtq",
+    "count": 1
+  },
+  {
+    "tag_id": 2751,
+    "name": "Liberalism",
+    "slug": "liberalism",
+    "count": 1
+  },
+  {
+    "tag_id": 2577,
+    "name": "limate change",
+    "slug": "limate-change",
+    "count": 0
+  },
+  {
+    "tag_id": 757,
+    "name": "linguistics",
+    "slug": "linguistics",
+    "count": 4
+  },
+  {
+    "tag_id": 675,
+    "name": "Literature",
+    "slug": "literature",
+    "count": 11
+  },
+  {
+    "tag_id": 382,
+    "name": "Lived Religion",
+    "slug": "lived-religion",
+    "count": 12
+  },
+  {
+    "tag_id": 950,
+    "name": "Locality",
+    "slug": "locality",
+    "count": 4
+  },
+  {
+    "tag_id": 431,
+    "name": "Location",
+    "slug": "location",
+    "count": 5
+  },
+  {
+    "tag_id": 517,
+    "name": "London",
+    "slug": "london",
+    "count": 3
+  },
+  {
+    "tag_id": 2547,
+    "name": "m",
+    "slug": "m",
+    "count": 0
+  },
+  {
+    "tag_id": 465,
+    "name": "Magic",
+    "slug": "magic",
+    "count": 6
+  },
+  {
+    "tag_id": 2670,
+    "name": "Mantra",
+    "slug": "mantra",
+    "count": 1
+  },
+  {
+    "tag_id": 2739,
+    "name": "Manuscripts",
+    "slug": "manuscripts",
+    "count": 1
+  },
+  {
+    "tag_id": 2653,
+    "name": "Mapuche",
+    "slug": "mapuche",
+    "count": 1
+  },
+  {
+    "tag_id": 2572,
+    "name": "marginalization",
+    "slug": "marginalization",
+    "count": 1
+  },
+  {
+    "tag_id": 2746,
+    "name": "Martin Luther King Jr",
+    "slug": "martin-luther-king-jr",
+    "count": 1
+  },
+  {
+    "tag_id": 2677,
+    "name": "Martyr Worship",
+    "slug": "martyr-worship",
+    "count": 1
+  },
+  {
+    "tag_id": 2635,
+    "name": "Martyrdom",
+    "slug": "martyrdom",
+    "count": 2
+  },
+  {
+    "tag_id": 369,
+    "name": "marx",
+    "slug": "marx",
+    "count": 3
+  },
+  {
+    "tag_id": 2582,
+    "name": "masculinity",
+    "slug": "masculinity",
+    "count": 2
+  },
+  {
+    "tag_id": 928,
+    "name": "material",
+    "slug": "material",
+    "count": 3
+  },
+  {
+    "tag_id": 2703,
+    "name": "material conditions",
+    "slug": "material-conditions",
+    "count": 1
+  },
+  {
+    "tag_id": 966,
+    "name": "material culture",
+    "slug": "material-culture",
+    "count": 8
+  },
+  {
+    "tag_id": 415,
+    "name": "Material Religion",
+    "slug": "material-religion",
+    "count": 15
+  },
+  {
+    "tag_id": 122,
+    "name": "Materiality",
+    "slug": "materiality",
+    "count": 7
+  },
+  {
+    "tag_id": 1615,
+    "name": "Max Weber",
+    "slug": "max-weber",
+    "count": 3
+  },
+  {
+    "tag_id": 895,
+    "name": "meaning",
+    "slug": "meaning",
+    "count": 4
+  },
+  {
+    "tag_id": 310,
+    "name": "media",
+    "slug": "media",
+    "count": 19
+  },
+  {
+    "tag_id": 2428,
+    "name": "Mediation",
+    "slug": "mediation",
+    "count": 3
+  },
+  {
+    "tag_id": 2819,
+    "name": "Medicine",
+    "slug": "medicine",
+    "count": 1
+  },
+  {
+    "tag_id": 2548,
+    "name": "Medicine and Religion",
+    "slug": "medicine-and-religion",
+    "count": 1
+  },
+  {
+    "tag_id": 2575,
+    "name": "medievalism",
+    "slug": "medievalism",
+    "count": 1
+  },
+  {
+    "tag_id": 989,
+    "name": "Memory",
+    "slug": "memory",
+    "count": 6
+  },
+  {
+    "tag_id": 2795,
+    "name": "Metamodernism",
+    "slug": "metamodernism",
+    "count": 1
+  },
+  {
+    "tag_id": 2792,
+    "name": "Method",
+    "slug": "method",
+    "count": 1
+  },
+  {
+    "tag_id": 2633,
+    "name": "Method and Theory",
+    "slug": "method-and-theory",
+    "count": 1
+  },
+  {
+    "tag_id": 560,
+    "name": "methodology",
+    "slug": "methodology",
+    "count": 30
+  },
+  {
+    "tag_id": 388,
+    "name": "methods",
+    "slug": "methods",
+    "count": 15
+  },
+  {
+    "tag_id": 1826,
+    "name": "Michel De Certeau",
+    "slug": "michel-de-certeau",
+    "count": 3
+  },
+  {
+    "tag_id": 2732,
+    "name": "Mid-Year Special",
+    "slug": "mid-year-special",
+    "count": 9
+  },
+  {
+    "tag_id": 193,
+    "name": "Migration",
+    "slug": "migration",
+    "count": 7
+  },
+  {
+    "tag_id": 448,
+    "name": "millennialism",
+    "slug": "millennialism",
+    "count": 7
+  },
+  {
+    "tag_id": 2598,
+    "name": "mimetics",
+    "slug": "mimetics",
+    "count": 1
+  },
+  {
+    "tag_id": 2613,
+    "name": "Minoritized Religions",
+    "slug": "minoritized-religions",
+    "count": 2
+  },
+  {
+    "tag_id": 2546,
+    "name": "miracles",
+    "slug": "miracles",
+    "count": 1
+  },
+  {
+    "tag_id": 1157,
+    "name": "Mircea Eliade",
+    "slug": "mircea-eliade",
+    "count": 4
+  },
+  {
+    "tag_id": 2783,
+    "name": "Misinformation",
+    "slug": "misinformation",
+    "count": 1
+  },
+  {
+    "tag_id": 2782,
+    "name": "MisinformationOrthodox Church",
+    "slug": "misinformationorthodox-church",
+    "count": 0
+  },
+  {
+    "tag_id": 2747,
+    "name": "MLK",
+    "slug": "mlk",
+    "count": 1
+  },
+  {
+    "tag_id": 2568,
+    "name": "mobility",
+    "slug": "mobility",
+    "count": 1
+  },
+  {
+    "tag_id": 2796,
+    "name": "Modernism",
+    "slug": "modernism",
+    "count": 1
+  },
+  {
+    "tag_id": 1024,
+    "name": "modernity",
+    "slug": "modernity",
+    "count": 7
+  },
+  {
+    "tag_id": 2672,
+    "name": "Monasticism",
+    "slug": "monasticism",
+    "count": 1
+  },
+  {
+    "tag_id": 130,
+    "name": "Mormonism",
+    "slug": "mormonism",
+    "count": 10
+  },
+  {
+    "tag_id": 2803,
+    "name": "Mormons",
+    "slug": "mormons",
+    "count": 1
+  },
+  {
+    "tag_id": 1387,
+    "name": "multiculturalism",
+    "slug": "multiculturalism",
+    "count": 5
+  },
+  {
+    "tag_id": 673,
+    "name": "Music",
+    "slug": "music",
+    "count": 13
+  },
+  {
+    "tag_id": 1900,
+    "name": "muslim",
+    "slug": "muslim",
+    "count": 3
+  },
+  {
+    "tag_id": 2065,
+    "name": "Muslim NGOs",
+    "slug": "muslim-ngos",
+    "count": 4
+  },
+  {
+    "tag_id": 614,
+    "name": "Mysticism",
+    "slug": "mysticism",
+    "count": 10
+  },
+  {
+    "tag_id": 359,
+    "name": "mystification",
+    "slug": "mystification",
+    "count": 3
+  },
+  {
+    "tag_id": 745,
+    "name": "Myth",
+    "slug": "myth",
+    "count": 15
+  },
+  {
+    "tag_id": 746,
+    "name": "Mythology",
+    "slug": "mythology",
+    "count": 6
+  },
+  {
+    "tag_id": 152,
+    "name": "NAASR",
+    "slug": "naasr",
+    "count": 4
+  },
+  {
+    "tag_id": 2770,
+    "name": "Nag Hammadi",
+    "slug": "nag-hammadi",
+    "count": 1
+  },
+  {
+    "tag_id": 670,
+    "name": "narrative",
+    "slug": "narrative",
+    "count": 14
+  },
+  {
+    "tag_id": 2820,
+    "name": "Narrative Construction",
+    "slug": "narrative-construction",
+    "count": 1
+  },
+  {
+    "tag_id": 2650,
+    "name": "nation-state",
+    "slug": "nation-state",
+    "count": 1
+  },
+  {
+    "tag_id": 206,
+    "name": "Nationalism",
+    "slug": "nationalism",
+    "count": 10
+  },
+  {
+    "tag_id": 2561,
+    "name": "Native American and Indigenous Studies",
+    "slug": "native-american-and-indigenous-studies",
+    "count": 2
+  },
+  {
+    "tag_id": 290,
+    "name": "nature",
+    "slug": "nature",
+    "count": 7
+  },
+  {
+    "tag_id": 2492,
+    "name": "Near Death Experiences",
+    "slug": "near-death-experiences",
+    "count": 3
+  },
+  {
+    "tag_id": 942,
+    "name": "Neo-Pagans",
+    "slug": "neo-pagans",
+    "count": 3
+  },
+  {
+    "tag_id": 200,
+    "name": "Neo-Tylorian",
+    "slug": "neo-tylorian",
+    "count": 3
+  },
+  {
+    "tag_id": 2396,
+    "name": "neoconservatism",
+    "slug": "neoconservatism",
+    "count": 3
+  },
+  {
+    "tag_id": 646,
+    "name": "Networks",
+    "slug": "networks",
+    "count": 6
+  },
+  {
+    "tag_id": 892,
+    "name": "new age",
+    "slug": "new-age",
+    "count": 12
+  },
+  {
+    "tag_id": 1646,
+    "name": "new religious movement",
+    "slug": "new-religious-movement",
+    "count": 3
+  },
+  {
+    "tag_id": 324,
+    "name": "New Religious Movements",
+    "slug": "new-religious-movements",
+    "count": 30
+  },
+  {
+    "tag_id": 2630,
+    "name": "New Testament",
+    "slug": "new-testament",
+    "count": 1
+  },
+  {
+    "tag_id": 2606,
+    "name": "New Testament Studies",
+    "slug": "new-testament-studies",
+    "count": 2
+  },
+  {
+    "tag_id": 2687,
+    "name": "New Wold Order",
+    "slug": "new-wold-order",
+    "count": 1
+  },
+  {
+    "tag_id": 580,
+    "name": "News",
+    "slug": "news",
+    "count": 8
+  },
+  {
+    "tag_id": 2076,
+    "name": "NGOs",
+    "slug": "ngos",
+    "count": 4
+  },
+  {
+    "tag_id": 2077,
+    "name": "NGOs series",
+    "slug": "ngos-series",
+    "count": 7
+  },
+  {
+    "tag_id": 1829,
+    "name": "Non-Religion",
+    "slug": "non-religion",
+    "count": 7
+  },
+  {
+    "tag_id": 1176,
+    "name": "nonbelief",
+    "slug": "nonbelief",
+    "count": 7
+  },
+  {
+    "tag_id": 216,
+    "name": "Nonreligion",
+    "slug": "nonreligion",
+    "count": 36
+  },
+  {
+    "tag_id": 2812,
+    "name": "Northern Ireland",
+    "slug": "northern-ireland",
+    "count": 1
+  },
+  {
+    "tag_id": 1648,
+    "name": "NRM",
+    "slug": "nrm",
+    "count": 4
+  },
+  {
+    "tag_id": 322,
+    "name": "NRMs",
+    "slug": "nrms",
+    "count": 11
+  },
+  {
+    "tag_id": 446,
+    "name": "nsrn",
+    "slug": "nsrn",
+    "count": 5
+  },
+  {
+    "tag_id": 2716,
+    "name": "Obeah",
+    "slug": "obeah",
+    "count": 2
+  },
+  {
+    "tag_id": 466,
+    "name": "Occult",
+    "slug": "occult",
+    "count": 4
+  },
+  {
+    "tag_id": 2164,
+    "name": "Occultism",
+    "slug": "occultism",
+    "count": 4
+  },
+  {
+    "tag_id": 605,
+    "name": "Online",
+    "slug": "online",
+    "count": 7
+  },
+  {
+    "tag_id": 775,
+    "name": "ontology",
+    "slug": "ontology",
+    "count": 5
+  },
+  {
+    "tag_id": 1043,
+    "name": "open access",
+    "slug": "open-access",
+    "count": 12
+  },
+  {
+    "tag_id": 651,
+    "name": "open university",
+    "slug": "open-university",
+    "count": 3
+  },
+  {
+    "tag_id": 958,
+    "name": "Orientalism",
+    "slug": "orientalism",
+    "count": 8
+  },
+  {
+    "tag_id": 2810,
+    "name": "Orientialism",
+    "slug": "orientialism",
+    "count": 1
+  },
+  {
+    "tag_id": 2680,
+    "name": "Origins",
+    "slug": "origins",
+    "count": 1
+  },
+  {
+    "tag_id": 2784,
+    "name": "Orthodox Church",
+    "slug": "orthodox-church",
+    "count": 1
+  },
+  {
+    "tag_id": 2762,
+    "name": "OSS",
+    "slug": "oss",
+    "count": 1
+  },
+  {
+    "tag_id": 1685,
+    "name": "pagan studies",
+    "slug": "pagan-studies",
+    "count": 3
+  },
+  {
+    "tag_id": 474,
+    "name": "Paganism",
+    "slug": "paganism",
+    "count": 10
+  },
+  {
+    "tag_id": 2698,
+    "name": "Pandemic",
+    "slug": "pandemic",
+    "count": 1
+  },
+  {
+    "tag_id": 760,
+    "name": "paranormal",
+    "slug": "paranormal",
+    "count": 6
+  },
+  {
+    "tag_id": 2815,
+    "name": "Passover",
+    "slug": "passover",
+    "count": 1
+  },
+  {
+    "tag_id": 551,
+    "name": "pedagogy",
+    "slug": "pedagogy",
+    "count": 30
+  },
+  {
+    "tag_id": 994,
+    "name": "Pentecostalism",
+    "slug": "pentecostalism",
+    "count": 10
+  },
+  {
+    "tag_id": 2824,
+    "name": "Performance Art",
+    "slug": "performance-art",
+    "count": 1
+  },
+  {
+    "tag_id": 1398,
+    "name": "Peru",
+    "slug": "peru",
+    "count": 6
+  },
+  {
+    "tag_id": 1445,
+    "name": "pew research",
+    "slug": "pew-research",
+    "count": 3
+  },
+  {
+    "tag_id": 25,
+    "name": "Phenomenology",
+    "slug": "phenomenology",
+    "count": 8
+  },
+  {
+    "tag_id": 2787,
+    "name": "Philippines",
+    "slug": "philippines",
+    "count": 1
+  },
+  {
+    "tag_id": 737,
+    "name": "Philosophy",
+    "slug": "philosophy",
+    "count": 8
+  },
+  {
+    "tag_id": 486,
+    "name": "philosophy of religion",
+    "slug": "philosophy-of-religion",
+    "count": 8
+  },
+  {
+    "tag_id": 185,
+    "name": "Pilgrimage",
+    "slug": "pilgrimage",
+    "count": 8
+  },
+  {
+    "tag_id": 432,
+    "name": "Place",
+    "slug": "place",
+    "count": 5
+  },
+  {
+    "tag_id": 861,
+    "name": "pluralism",
+    "slug": "pluralism",
+    "count": 8
+  },
+  {
+    "tag_id": 2597,
+    "name": "podcasting",
+    "slug": "podcasting",
+    "count": 1
+  },
+  {
+    "tag_id": 2718,
+    "name": "Podcasting Pedagogy",
+    "slug": "podcasting-pedagogy",
+    "count": 0
+  },
+  {
+    "tag_id": 393,
+    "name": "Politics",
+    "slug": "politics",
+    "count": 37
+  },
+  {
+    "tag_id": 2603,
+    "name": "pop culture",
+    "slug": "pop-culture",
+    "count": 0
+  },
+  {
+    "tag_id": 636,
+    "name": "Popular Culture",
+    "slug": "popular-culture",
+    "count": 16
+  },
+  {
+    "tag_id": 384,
+    "name": "Popular Religion",
+    "slug": "popular-religion",
+    "count": 5
+  },
+  {
+    "tag_id": 2793,
+    "name": "Positionality",
+    "slug": "positionality",
+    "count": 1
+  },
+  {
+    "tag_id": 910,
+    "name": "Possession",
+    "slug": "possession",
+    "count": 4
+  },
+  {
+    "tag_id": 559,
+    "name": "Post-Colonialism",
+    "slug": "post-colonialism",
+    "count": 5
+  },
+  {
+    "tag_id": 2733,
+    "name": "Post-structuralism",
+    "slug": "post-structuralism",
+    "count": 1
+  },
+  {
+    "tag_id": 2660,
+    "name": "postcolonial theory",
+    "slug": "postcolonial-theory",
+    "count": 1
+  },
+  {
+    "tag_id": 1470,
+    "name": "postdoc",
+    "slug": "postdoc",
+    "count": 11
+  },
+  {
+    "tag_id": 2608,
+    "name": "posthumanism",
+    "slug": "posthumanism",
+    "count": 1
+  },
+  {
+    "tag_id": 525,
+    "name": "postmodernism",
+    "slug": "postmodernism",
+    "count": 3
+  },
+  {
+    "tag_id": 1044,
+    "name": "postsecular",
+    "slug": "postsecular",
+    "count": 6
+  },
+  {
+    "tag_id": 2700,
+    "name": "poststructuralism",
+    "slug": "poststructuralism",
+    "count": 2
+  },
+  {
+    "tag_id": 726,
+    "name": "Power",
+    "slug": "power",
+    "count": 26
+  },
+  {
+    "tag_id": 612,
+    "name": "Practice",
+    "slug": "practice",
+    "count": 11
+  },
+  {
+    "tag_id": 925,
+    "name": "prayer",
+    "slug": "prayer",
+    "count": 5
+  },
+  {
+    "tag_id": 598,
+    "name": "Prison",
+    "slug": "prison",
+    "count": 3
+  },
+  {
+    "tag_id": 1757,
+    "name": "professor",
+    "slug": "professor",
+    "count": 3
+  },
+  {
+    "tag_id": 2760,
+    "name": "Propaganda",
+    "slug": "propaganda",
+    "count": 1
+  },
+  {
+    "tag_id": 851,
+    "name": "Prosociality",
+    "slug": "prosociality",
+    "count": 3
+  },
+  {
+    "tag_id": 2789,
+    "name": "Prosperity Gospel",
+    "slug": "prosperity-gospel",
+    "count": 1
+  },
+  {
+    "tag_id": 2822,
+    "name": "Protests",
+    "slug": "protests",
+    "count": 1
+  },
+  {
+    "tag_id": 2753,
+    "name": "Psychedelics",
+    "slug": "psychedelics",
+    "count": 1
+  },
+  {
+    "tag_id": 750,
+    "name": "Psychoanalysis",
+    "slug": "psychoanalysis",
+    "count": 3
+  },
+  {
+    "tag_id": 81,
+    "name": "Psychology of Religion",
+    "slug": "psychology",
+    "count": 29
+  },
+  {
+    "tag_id": 564,
+    "name": "Psychology of Religion",
+    "slug": "psychology-of-religion",
+    "count": 30
+  },
+  {
+    "tag_id": 234,
+    "name": "Public",
+    "slug": "public",
+    "count": 4
+  },
+  {
+    "tag_id": 496,
+    "name": "public benefit",
+    "slug": "public-benefit",
+    "count": 4
+  },
+  {
+    "tag_id": 2638,
+    "name": "Public discourse",
+    "slug": "public-discourse",
+    "count": 1
+  },
+  {
+    "tag_id": 2328,
+    "name": "public scholarship",
+    "slug": "public-scholarship",
+    "count": 4
+  },
+  {
+    "tag_id": 1010,
+    "name": "public sphere",
+    "slug": "public-sphere",
+    "count": 6
+  },
+  {
+    "tag_id": 53,
+    "name": "Publishing",
+    "slug": "publishing",
+    "count": 10
+  },
+  {
+    "tag_id": 2506,
+    "name": "pyschology",
+    "slug": "pyschology",
+    "count": 2
+  },
+  {
+    "tag_id": 2688,
+    "name": "QAnon",
+    "slug": "qanon",
+    "count": 1
+  },
+  {
+    "tag_id": 390,
+    "name": "qualitative",
+    "slug": "qualitative",
+    "count": 6
+  },
+  {
+    "tag_id": 299,
+    "name": "quantitative",
+    "slug": "quantitative",
+    "count": 10
+  },
+  {
+    "tag_id": 1416,
+    "name": "queer studies",
+    "slug": "queer-studies",
+    "count": 3
+  },
+  {
+    "tag_id": 207,
+    "name": "Race",
+    "slug": "race",
+    "count": 20
+  },
+  {
+    "tag_id": 2197,
+    "name": "Racism",
+    "slug": "racism",
+    "count": 10
+  },
+  {
+    "tag_id": 1789,
+    "name": "Radicalisation",
+    "slug": "radicalisation",
+    "count": 3
+  },
+  {
+    "tag_id": 1394,
+    "name": "Rationalism",
+    "slug": "rationalism",
+    "count": 3
+  },
+  {
+    "tag_id": 809,
+    "name": "reductionism",
+    "slug": "reductionism",
+    "count": 4
+  },
+  {
+    "tag_id": 2826,
+    "name": "REF 2021",
+    "slug": "ref-2021",
+    "count": 0
+  },
+  {
+    "tag_id": 619,
+    "name": "Reflexivity",
+    "slug": "reflexivity",
+    "count": 10
+  },
+  {
+    "tag_id": 1001,
+    "name": "Reformation",
+    "slug": "reformation",
+    "count": 4
+  },
+  {
+    "tag_id": 1458,
+    "name": "reincarnation",
+    "slug": "reincarnation",
+    "count": 4
+  },
+  {
+    "tag_id": 2642,
+    "name": "Religion",
+    "slug": "religion",
+    "count": 3
+  },
+  {
+    "tag_id": 2778,
+    "name": "Religion &amp; Gender",
+    "slug": "religion-gender",
+    "count": 1
+  },
+  {
+    "tag_id": 2779,
+    "name": "Religion &amp; Law",
+    "slug": "religion-law",
+    "count": 1
+  },
+  {
+    "tag_id": 2411,
+    "name": "religion and aging",
+    "slug": "religion-and-aging",
+    "count": 3
+  },
+  {
+    "tag_id": 2594,
+    "name": "religion and ecology",
+    "slug": "religion-and-ecology",
+    "count": 2
+  },
+  {
+    "tag_id": 2583,
+    "name": "Religion and Gender",
+    "slug": "religion-and-gender",
+    "count": 0
+  },
+  {
+    "tag_id": 2558,
+    "name": "religion and law",
+    "slug": "religion-and-law",
+    "count": 8
+  },
+  {
+    "tag_id": 1251,
+    "name": "religion and politics",
+    "slug": "religion-and-politics",
+    "count": 19
+  },
+  {
+    "tag_id": 1816,
+    "name": "religion and race",
+    "slug": "religion-and-race",
+    "count": 9
+  },
+  {
+    "tag_id": 816,
+    "name": "religion and science",
+    "slug": "religion-and-science",
+    "count": 5
+  },
+  {
+    "tag_id": 2717,
+    "name": "Religion in 5 Minutes",
+    "slug": "religion-in-5-minutes",
+    "count": 0
+  },
+  {
+    "tag_id": 2552,
+    "name": "Religion in America",
+    "slug": "religion-in-america",
+    "count": 7
+  },
+  {
+    "tag_id": 2593,
+    "name": "Religion in Australia",
+    "slug": "religion-in-australia",
+    "count": 2
+  },
+  {
+    "tag_id": 2555,
+    "name": "Religion in FIlm and Television",
+    "slug": "religion-in-film-and-television",
+    "count": 1
+  },
+  {
+    "tag_id": 2553,
+    "name": "religious affiliation",
+    "slug": "religious-affiliation",
+    "count": 1
+  },
+  {
+    "tag_id": 281,
+    "name": "Religious Decline",
+    "slug": "religious-decline",
+    "count": 3
+  },
+  {
+    "tag_id": 698,
+    "name": "Religious Education",
+    "slug": "religious-education",
+    "count": 5
+  },
+  {
+    "tag_id": 1170,
+    "name": "religious experience",
+    "slug": "religious-experience",
+    "count": 8
+  },
+  {
+    "tag_id": 2691,
+    "name": "Religious Fear",
+    "slug": "religious-fear",
+    "count": 1
+  },
+  {
+    "tag_id": 1895,
+    "name": "Religious freedom",
+    "slug": "religious-freedom",
+    "count": 17
+  },
+  {
+    "tag_id": 2233,
+    "name": "religious identity",
+    "slug": "religious-identity",
+    "count": 3
+  },
+  {
+    "tag_id": 798,
+    "name": "religious literacy",
+    "slug": "religious-literacy",
+    "count": 5
+  },
+  {
+    "tag_id": 2661,
+    "name": "religious nationalism",
+    "slug": "religious-nationalism",
+    "count": 1
+  },
+  {
+    "tag_id": 2669,
+    "name": "Religious Right",
+    "slug": "religious-right",
+    "count": 1
+  },
+  {
+    "tag_id": 15,
+    "name": "Religious Studies",
+    "slug": "religious-studies",
+    "count": 87
+  },
+  {
+    "tag_id": 2720,
+    "name": "Religious Symbols",
+    "slug": "religious-symbols",
+    "count": 1
+  },
+  {
+    "tag_id": 2591,
+    "name": "religious violence",
+    "slug": "religious-violence",
+    "count": 1
+  },
+  {
+    "tag_id": 2714,
+    "name": "Remix",
+    "slug": "remix",
+    "count": 0
+  },
+  {
+    "tag_id": 713,
+    "name": "representation",
+    "slug": "representation",
+    "count": 5
+  },
+  {
+    "tag_id": 95,
+    "name": "Research",
+    "slug": "research",
+    "count": 4
+  },
+  {
+    "tag_id": 2827,
+    "name": "Research Excellence Framework",
+    "slug": "research-excellence-framework",
+    "count": 0
+  },
+  {
+    "tag_id": 387,
+    "name": "research methods",
+    "slug": "research-methods",
+    "count": 7
+  },
+  {
+    "tag_id": 52,
+    "name": "resources",
+    "slug": "resources-2",
+    "count": 12
+  },
+  {
+    "tag_id": 2662,
+    "name": "rhetoric",
+    "slug": "rhetoric",
+    "count": 4
+  },
+  {
+    "tag_id": 2821,
+    "name": "Rights",
+    "slug": "rights",
+    "count": 1
+  },
+  {
+    "tag_id": 385,
+    "name": "Ritual",
+    "slug": "ritual",
+    "count": 29
+  },
+  {
+    "tag_id": 343,
+    "name": "roundtable",
+    "slug": "roundtable",
+    "count": 7
+  },
+  {
+    "tag_id": 2773,
+    "name": "RSP Discourse",
+    "slug": "rsp-discourse",
+    "count": 32
+  },
+  {
+    "tag_id": 2776,
+    "name": "RSP Remix",
+    "slug": "rsp-remix",
+    "count": 2
+  },
+  {
+    "tag_id": 482,
+    "name": "rudolf otto",
+    "slug": "rudolf-otto",
+    "count": 4
+  },
+  {
+    "tag_id": 2785,
+    "name": "Russia",
+    "slug": "russia",
+    "count": 1
+  },
+  {
+    "tag_id": 201,
+    "name": "Sacred",
+    "slug": "sacred",
+    "count": 16
+  },
+  {
+    "tag_id": 2567,
+    "name": "sacred objects",
+    "slug": "sacred-objects",
+    "count": 0
+  },
+  {
+    "tag_id": 2569,
+    "name": "sacred texts",
+    "slug": "sacred-texts",
+    "count": 4
+  },
+  {
+    "tag_id": 2707,
+    "name": "Saint Thomas Christians",
+    "slug": "saint-thomas-christians",
+    "count": 1
+  },
+  {
+    "tag_id": 2634,
+    "name": "Saints",
+    "slug": "saints",
+    "count": 1
+  },
+  {
+    "tag_id": 1878,
+    "name": "sanskrit",
+    "slug": "sanskrit",
+    "count": 3
+  },
+  {
+    "tag_id": 2683,
+    "name": "Santeria",
+    "slug": "santeria",
+    "count": 1
+  },
+  {
+    "tag_id": 2614,
+    "name": "Satanic Panic",
+    "slug": "satanic-panic",
+    "count": 2
+  },
+  {
+    "tag_id": 2748,
+    "name": "Satanism",
+    "slug": "satanism",
+    "count": 1
+  },
+  {
+    "tag_id": 2757,
+    "name": "Scholarship",
+    "slug": "scholarship",
+    "count": 1
+  },
+  {
+    "tag_id": 879,
+    "name": "science",
+    "slug": "science",
+    "count": 12
+  },
+  {
+    "tag_id": 35,
+    "name": "Science Fiction",
+    "slug": "science-fiction",
+    "count": 9
+  },
+  {
+    "tag_id": 2651,
+    "name": "scientific divulgation",
+    "slug": "scientific-divulgation",
+    "count": 1
+  },
+  {
+    "tag_id": 91,
+    "name": "Scientology",
+    "slug": "scientology",
+    "count": 6
+  },
+  {
+    "tag_id": 298,
+    "name": "scotland",
+    "slug": "scotland",
+    "count": 4
+  },
+  {
+    "tag_id": 2576,
+    "name": "scripture",
+    "slug": "scripture",
+    "count": 3
+  },
+  {
+    "tag_id": 1792,
+    "name": "Secular",
+    "slug": "secular",
+    "count": 10
+  },
+  {
+    "tag_id": 1697,
+    "name": "secularisation",
+    "slug": "secularisation",
+    "count": 6
+  },
+  {
+    "tag_id": 126,
+    "name": "Secularism",
+    "slug": "secularism",
+    "count": 38
+  },
+  {
+    "tag_id": 1923,
+    "name": "Secularity",
+    "slug": "secularity",
+    "count": 5
+  },
+  {
+    "tag_id": 535,
+    "name": "Secularization",
+    "slug": "secularization",
+    "count": 54
+  },
+  {
+    "tag_id": 2401,
+    "name": "Secularization thesis",
+    "slug": "secularization-thesis",
+    "count": 3
+  },
+  {
+    "tag_id": 2655,
+    "name": "Selk’nam",
+    "slug": "selknam",
+    "count": 1
+  },
+  {
+    "tag_id": 2797,
+    "name": "Semiotics",
+    "slug": "semiotics",
+    "count": 1
+  },
+  {
+    "tag_id": 635,
+    "name": "Serpent Handling",
+    "slug": "serpent-handling",
+    "count": 3
+  },
+  {
+    "tag_id": 2592,
+    "name": "Sexual Abuse",
+    "slug": "sexual-abuse",
+    "count": 6
+  },
+  {
+    "tag_id": 221,
+    "name": "Sexuality",
+    "slug": "sexuality",
+    "count": 8
+  },
+  {
+    "tag_id": 374,
+    "name": "shamanism",
+    "slug": "shamanism",
+    "count": 8
+  },
+  {
+    "tag_id": 1236,
+    "name": "Shinto",
+    "slug": "shinto",
+    "count": 7
+  },
+  {
+    "tag_id": 2636,
+    "name": "Shrines",
+    "slug": "shrines",
+    "count": 2
+  },
+  {
+    "tag_id": 1237,
+    "name": "Social Construction",
+    "slug": "social-construction",
+    "count": 7
+  },
+  {
+    "tag_id": 762,
+    "name": "Social Constructionism",
+    "slug": "social-constructionism",
+    "count": 3
+  },
+  {
+    "tag_id": 2629,
+    "name": "Social Formation",
+    "slug": "social-formation",
+    "count": 1
+  },
+  {
+    "tag_id": 2676,
+    "name": "Social Group Formation",
+    "slug": "social-group-formation",
+    "count": 1
+  },
+  {
+    "tag_id": 2755,
+    "name": "Social Justice",
+    "slug": "social-justice",
+    "count": 1
+  },
+  {
+    "tag_id": 679,
+    "name": "Social Media",
+    "slug": "social-media",
+    "count": 6
+  },
+  {
+    "tag_id": 1563,
+    "name": "Social Sciences",
+    "slug": "social-sciences",
+    "count": 6
+  },
+  {
+    "tag_id": 692,
+    "name": "Social Theory",
+    "slug": "social-theory",
+    "count": 8
+  },
+  {
+    "tag_id": 138,
+    "name": "Society",
+    "slug": "society",
+    "count": 4
+  },
+  {
+    "tag_id": 2585,
+    "name": "sociology",
+    "slug": "sociology-2",
+    "count": 0
+  },
+  {
+    "tag_id": 57,
+    "name": "Sociology of Religion",
+    "slug": "sociology",
+    "count": 46
+  },
+  {
+    "tag_id": 1164,
+    "name": "Sociology of Religion",
+    "slug": "sociology-of-religion",
+    "count": 19
+  },
+  {
+    "tag_id": 342,
+    "name": "SOCREL",
+    "slug": "socrel",
+    "count": 14
+  },
+  {
+    "tag_id": 2706,
+    "name": "source language",
+    "slug": "source-language",
+    "count": 1
+  },
+  {
+    "tag_id": 993,
+    "name": "South America",
+    "slug": "south-america",
+    "count": 4
+  },
+  {
+    "tag_id": 2671,
+    "name": "South Asian religions",
+    "slug": "south-asian-religions",
+    "count": 1
+  },
+  {
+    "tag_id": 2705,
+    "name": "southwest India",
+    "slug": "southwest-india",
+    "count": 1
+  },
+  {
+    "tag_id": 2643,
+    "name": "Sovereignty",
+    "slug": "sovereignty",
+    "count": 1
+  },
+  {
+    "tag_id": 421,
+    "name": "Space",
+    "slug": "space",
+    "count": 13
+  },
+  {
+    "tag_id": 2596,
+    "name": "Special Episode",
+    "slug": "special-episode",
+    "count": 1
+  },
+  {
+    "tag_id": 1338,
+    "name": "spirits",
+    "slug": "spirits",
+    "count": 3
+  },
+  {
+    "tag_id": 2754,
+    "name": "Spiritual Abuse",
+    "slug": "spiritual-abuse",
+    "count": 1
+  },
+  {
+    "tag_id": 1078,
+    "name": "spiritual but not religious",
+    "slug": "spiritual-but-not-religious",
+    "count": 6
+  },
+  {
+    "tag_id": 2566,
+    "name": "spiritual capital",
+    "slug": "spiritual-capital",
+    "count": 0
+  },
+  {
+    "tag_id": 595,
+    "name": "Spiritual Tourism",
+    "slug": "spiritual-tourism",
+    "count": 3
+  },
+  {
+    "tag_id": 375,
+    "name": "spiritualism",
+    "slug": "spiritualism",
+    "count": 5
+  },
+  {
+    "tag_id": 293,
+    "name": "Spirituality",
+    "slug": "spirituality",
+    "count": 36
+  },
+  {
+    "tag_id": 2814,
+    "name": "sports",
+    "slug": "sports",
+    "count": 1
+  },
+  {
+    "tag_id": 733,
+    "name": "SSSR",
+    "slug": "sssr",
+    "count": 3
+  },
+  {
+    "tag_id": 2807,
+    "name": "Star Trek",
+    "slug": "star-trek",
+    "count": 1
+  },
+  {
+    "tag_id": 2800,
+    "name": "Stephen Sondheim",
+    "slug": "stephen-sondheim",
+    "count": 1
+  },
+  {
+    "tag_id": 2611,
+    "name": "Stigma",
+    "slug": "stigma",
+    "count": 2
+  },
+  {
+    "tag_id": 2545,
+    "name": "Stigmata",
+    "slug": "stigmata",
+    "count": 1
+  },
+  {
+    "tag_id": 2678,
+    "name": "Structuralism",
+    "slug": "structuralism",
+    "count": 1
+  },
+  {
+    "tag_id": 1671,
+    "name": "study of religion",
+    "slug": "study-of-religion",
+    "count": 12
+  },
+  {
+    "tag_id": 1771,
+    "name": "study of religions",
+    "slug": "study-of-religions",
+    "count": 5
+  },
+  {
+    "tag_id": 2801,
+    "name": "Sturgill Simpson",
+    "slug": "sturgill-simpson",
+    "count": 1
+  },
+  {
+    "tag_id": 2648,
+    "name": "Sudan",
+    "slug": "sudan",
+    "count": 1
+  },
+  {
+    "tag_id": 1136,
+    "name": "Sufism",
+    "slug": "sufism",
+    "count": 3
+  },
+  {
+    "tag_id": 780,
+    "name": "sui generis",
+    "slug": "sui-generis",
+    "count": 5
+  },
+  {
+    "tag_id": 186,
+    "name": "Summer School",
+    "slug": "summer-school",
+    "count": 3
+  },
+  {
+    "tag_id": 1137,
+    "name": "Superheroes",
+    "slug": "superheroes",
+    "count": 3
+  },
+  {
+    "tag_id": 905,
+    "name": "Supernatural",
+    "slug": "supernatural",
+    "count": 6
+  },
+  {
+    "tag_id": 304,
+    "name": "Surveys",
+    "slug": "surveys",
+    "count": 6
+  },
+  {
+    "tag_id": 1370,
+    "name": "Switzerland",
+    "slug": "switzerland",
+    "count": 3
+  },
+  {
+    "tag_id": 314,
+    "name": "Sydney",
+    "slug": "sydney",
+    "count": 6
+  },
+  {
+    "tag_id": 2708,
+    "name": "symbolism",
+    "slug": "symbolism",
+    "count": 1
+  },
+  {
+    "tag_id": 2645,
+    "name": "Symbols",
+    "slug": "symbols",
+    "count": 1
+  },
+  {
+    "tag_id": 1247,
+    "name": "symposia",
+    "slug": "symposia",
+    "count": 3
+  },
+  {
+    "tag_id": 2710,
+    "name": "Talmud",
+    "slug": "talmud",
+    "count": 1
+  },
+  {
+    "tag_id": 974,
+    "name": "Tantra",
+    "slug": "tantra",
+    "count": 7
+  },
+  {
+    "tag_id": 414,
+    "name": "teaching",
+    "slug": "teaching",
+    "count": 12
+  },
+  {
+    "tag_id": 178,
+    "name": "Technology",
+    "slug": "technology",
+    "count": 4
+  },
+  {
+    "tag_id": 1657,
+    "name": "tenure",
+    "slug": "tenure",
+    "count": 3
+  },
+  {
+    "tag_id": 1658,
+    "name": "tenure track",
+    "slug": "tenure-track",
+    "count": 6
+  },
+  {
+    "tag_id": 445,
+    "name": "Terminology",
+    "slug": "terminology",
+    "count": 6
+  },
+  {
+    "tag_id": 1030,
+    "name": "Terror Management Theory",
+    "slug": "terror-management-theory",
+    "count": 3
+  },
+  {
+    "tag_id": 487,
+    "name": "Terrorism",
+    "slug": "terrorism",
+    "count": 4
+  },
+  {
+    "tag_id": 2557,
+    "name": "test",
+    "slug": "test",
+    "count": 0
+  },
+  {
+    "tag_id": 2791,
+    "name": "Textbook",
+    "slug": "textbook",
+    "count": 2
+  },
+  {
+    "tag_id": 2607,
+    "name": "textual studies",
+    "slug": "textual-studies",
+    "count": 0
+  },
+  {
+    "tag_id": 561,
+    "name": "theodicy",
+    "slug": "theodicy",
+    "count": 4
+  },
+  {
+    "tag_id": 14,
+    "name": "Theology",
+    "slug": "theology",
+    "count": 10
+  },
+  {
+    "tag_id": 337,
+    "name": "theory",
+    "slug": "theory",
+    "count": 46
+  },
+  {
+    "tag_id": 1063,
+    "name": "theory of mind",
+    "slug": "theory-of-mind",
+    "count": 4
+  },
+  {
+    "tag_id": 593,
+    "name": "tourism",
+    "slug": "tourism",
+    "count": 8
+  },
+  {
+    "tag_id": 990,
+    "name": "Tradition",
+    "slug": "tradition",
+    "count": 5
+  },
+  {
+    "tag_id": 1281,
+    "name": "transcript",
+    "slug": "transcript",
+    "count": 1
+  },
+  {
+    "tag_id": 830,
+    "name": "transhumanism",
+    "slug": "transhumanism",
+    "count": 4
+  },
+  {
+    "tag_id": 2610,
+    "name": "Transitional Justice",
+    "slug": "transitional-justice",
+    "count": 1
+  },
+  {
+    "tag_id": 2251,
+    "name": "Transnational",
+    "slug": "transnational",
+    "count": 4
+  },
+  {
+    "tag_id": 2609,
+    "name": "Trauma",
+    "slug": "trauma",
+    "count": 3
+  },
+  {
+    "tag_id": 2788,
+    "name": "Troll Farms",
+    "slug": "troll-farms",
+    "count": 1
+  },
+  {
+    "tag_id": 147,
+    "name": "Turkey",
+    "slug": "turkey",
+    "count": 3
+  },
+  {
+    "tag_id": 199,
+    "name": "Tylor",
+    "slug": "tylor",
+    "count": 5
+  },
+  {
+    "tag_id": 2599,
+    "name": "U.S. Supreme Court",
+    "slug": "u-s-supreme-court",
+    "count": 0
+  },
+  {
+    "tag_id": 222,
+    "name": "UK",
+    "slug": "uk",
+    "count": 10
+  },
+  {
+    "tag_id": 2786,
+    "name": "Ukraine",
+    "slug": "ukraine",
+    "count": 2
+  },
+  {
+    "tag_id": 2128,
+    "name": "Unbelief",
+    "slug": "unbelief",
+    "count": 6
+  },
+  {
+    "tag_id": 2556,
+    "name": "uncategorized",
+    "slug": "uncategorized",
+    "count": 0
+  },
+  {
+    "tag_id": 597,
+    "name": "United States",
+    "slug": "united-states",
+    "count": 12
+  },
+  {
+    "tag_id": 2641,
+    "name": "US Military",
+    "slug": "us-military",
+    "count": 2
+  },
+  {
+    "tag_id": 2758,
+    "name": "Us/Them",
+    "slug": "us-them",
+    "count": 1
+  },
+  {
+    "tag_id": 2813,
+    "name": "USA",
+    "slug": "usa",
+    "count": 1
+  },
+  {
+    "tag_id": 2750,
+    "name": "Vaccine",
+    "slug": "vaccine",
+    "count": 1
+  },
+  {
+    "tag_id": 377,
+    "name": "vernacular religion",
+    "slug": "vernacular-religion",
+    "count": 8
+  },
+  {
+    "tag_id": 1490,
+    "name": "Video Games",
+    "slug": "video-games",
+    "count": 6
+  },
+  {
+    "tag_id": 311,
+    "name": "violence",
+    "slug": "violence",
+    "count": 15
+  },
+  {
+    "tag_id": 419,
+    "name": "Visual Culture",
+    "slug": "visual-culture",
+    "count": 7
+  },
+  {
+    "tag_id": 2685,
+    "name": "Voodoo",
+    "slug": "voodoo",
+    "count": 1
+  },
+  {
+    "tag_id": 1267,
+    "name": "Wellbeing",
+    "slug": "wellbeing",
+    "count": 3
+  },
+  {
+    "tag_id": 443,
+    "name": "Western Esotericism",
+    "slug": "western-esotericism",
+    "count": 4
+  },
+  {
+    "tag_id": 2690,
+    "name": "White Supremacy",
+    "slug": "white-supremacy",
+    "count": 1
+  },
+  {
+    "tag_id": 473,
+    "name": "Wicca",
+    "slug": "wicca",
+    "count": 5
+  },
+  {
+    "tag_id": 794,
+    "name": "Witchcraft",
+    "slug": "witchcraft",
+    "count": 11
+  },
+  {
+    "tag_id": 97,
+    "name": "women",
+    "slug": "women",
+    "count": 9
+  },
+  {
+    "tag_id": 2550,
+    "name": "Women&#039;s studies",
+    "slug": "womens-studies",
+    "count": 0
+  },
+  {
+    "tag_id": 1612,
+    "name": "workshop",
+    "slug": "workshop",
+    "count": 4
+  },
+  {
+    "tag_id": 547,
+    "name": "world religions",
+    "slug": "world-religions",
+    "count": 11
+  },
+  {
+    "tag_id": 1874,
+    "name": "world religions paradigm",
+    "slug": "world-religions-paradigm",
+    "count": 10
+  },
+  {
+    "tag_id": 2171,
+    "name": "worldviews",
+    "slug": "worldviews",
+    "count": 3
+  },
+  {
+    "tag_id": 1835,
+    "name": "Xmas special",
+    "slug": "xmas-special",
+    "count": 0
+  },
+  {
+    "tag_id": 1046,
+    "name": "Yoga",
+    "slug": "yoga",
+    "count": 11
+  },
+  {
+    "tag_id": 224,
+    "name": "Youth",
+    "slug": "youth",
+    "count": 5
+  },
+  {
+    "tag_id": 2799,
+    "name": "Zeteticism",
+    "slug": "zeteticism",
+    "count": 1
+  }
+]

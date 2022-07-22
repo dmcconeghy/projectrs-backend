@@ -37,7 +37,7 @@ CREATE TABLE podcasts (
   featured_image INTEGER NOT NULL DEFAULT 0,
   editor INTEGER NOT NULL
     REFERENCES editors(editor_id),
-  mp3_file_url TEXT NOT NULL,
+  mp3_file_url TEXT NOT NULL DEFAULT "URL not found",
   type TEXT NOT NULL DEFAULT 'podcast'
     REFERENCES types(name) 
 );
