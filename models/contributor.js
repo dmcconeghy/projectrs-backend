@@ -3,6 +3,7 @@
 const db = require("../db");
 const { NotFoundError } = require("../expressError");
 const { sqlForPartialUpdate } = require("../helpers/sql");
+const DATA = require("../json/contributors.json");
 
 /** Related functions for Tags. */
 
@@ -13,6 +14,13 @@ class Contributor {
       * return new tag data.
       * 
       **/
+
+    static async searchJSON(name) {
+        const result = Object.values(DATA);
+        console.log("name : ", name);
+        let contributor = result.filter(contributor => contributor.name === name);
+        return contributor;
+    }
 
      static async create(data) {
         const result = await db.query(

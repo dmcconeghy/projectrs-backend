@@ -6,6 +6,13 @@ const express = require("express");
 const { getAllPodcasts, getAllContributors, getAllEditors, getAllTags, getAllResponses } = require("../helpers/archive");
 const fs = require("fs");
 const path = require("path");
+const Contributors = require("../models/contributor");
+const Editors = require("../models/editor");
+const Podcasts = require("../models/podcast");
+const Responses = require("../models/response");
+const Tags = require("../models/tags");
+
+
 
 const router = express.Router({ mergeParams: true });
 
@@ -165,6 +172,18 @@ router.get("/responses", async function (req, res, next) {
     } catch (err) {
         return next(err);
     }
+});
+
+router.get("/jsonFetch/:title", async function (req, res, next) {
+    const title = req.params.title
+    try {
+
+       const episode = await Podcasts.searchJSON(title);
+
+        return res.status(200).json( episode );
+    } catch (err) {
+        return next(err);
+    }   
 });
 
 module.exports = router;
