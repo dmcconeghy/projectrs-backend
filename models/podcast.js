@@ -15,12 +15,17 @@ class Podcast {
       * 
       **/
    
-   static async searchJSON(title) {
-      const result = Object.values(DATA);
-      console.log("title : ", title);
-      let episode = result.filter(episode => episode.title === title);
-      return episode;
-     }
+   static async getPodcastBySlug(slug) {
+      const podcasts = await db.query(
+         `SELECT * FROM podcasts WHERE slug = $1`,
+         [slug]);
+      const podcast = podcasts.rows[0];
+
+      if (!podcast) throw new NotFoundError(`Podcast not found`); 
+
+      return podcast;
+      }
+
 
    static async create(data) {
       const result = await db.query(

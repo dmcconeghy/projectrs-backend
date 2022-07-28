@@ -1,10 +1,11 @@
 "use strict";
 
-/** Routes for podcasts. */
+/** Routes for contributors. */
 
 const express = require("express");
 const { getContributors } = require("../helpers/direct_queries");
 const { getJSContributors} = require("../helpers/json_queries");
+const Contributor = require("../models/contributor");
 
 const router = express.Router({ mergeParams: true });
 
@@ -54,6 +55,15 @@ router.get("/", async function (req, res, next) {
     // } catch (err) {
     //     return next(err);
     // }
+});
+
+router.get("/:slug", async function (req, res, next) {
+    try {
+        const contributor = await Contributor.getContributorBySlug(req.params.slug);
+        return res.status(200).json(contributor);
+    } catch (err) {
+        return next(err);
+    }
 });
 
 module.exports = router

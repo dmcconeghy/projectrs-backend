@@ -64,7 +64,7 @@ async function getAllContributors(){
 async function getAllEditors() {
     console.log("fetching editors")
 
-    const res = await axios("https://religiousstudiesproject.com/wp-json/wp/v2/users");
+    const res = await axios("https://religiousstudiesproject.com/wp-json/wp/v2/users?per_page=100");
 
     return [...res.data];
 }

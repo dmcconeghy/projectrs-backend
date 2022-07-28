@@ -23,7 +23,7 @@ CREATE TABLE editors (
   editor_id INTEGER PRIMARY KEY UNIQUE,
   name TEXT NOT NULL,
   slug TEXT NOT NULL, 
-  avatar_image_url TEXT NOT NULL
+  avatar_image_url TEXT NOT NULL DEFAULT 'https://www.gravatar.com/avatar/?d=mp'
 );
 
 CREATE TABLE podcasts (
@@ -37,7 +37,7 @@ CREATE TABLE podcasts (
   featured_image INTEGER NOT NULL DEFAULT 0,
   editor INTEGER NOT NULL
     REFERENCES editors(editor_id),
-  mp3_file_url TEXT NOT NULL DEFAULT "URL not found",
+  mp3_file_url TEXT NOT NULL DEFAULT 'not found',
   type TEXT NOT NULL DEFAULT 'podcast'
     REFERENCES types(name) 
 );
@@ -77,7 +77,7 @@ CREATE TABLE transcripts (
 );
 
 ALTER TABLE podcasts
-  ADD transcript INTEGER NOT NULL
+  ADD transcript INTEGER
     REFERENCES transcripts(transcript_id);
 
 CREATE TABLE responses (
@@ -92,11 +92,18 @@ CREATE TABLE responses (
   featured_image INTEGER NOT NULL DEFAULT 0,
   editor INTEGER NOT NULL
     REFERENCES editors(editor_id),
-  contributors INTEGER NOT NULL
-    REFERENCES contributors(contributor_id),
   type TEXT NOT NULL DEFAULT 'response'
     REFERENCES types(name) 
 );
+
+CREATE TABLE response_contributors(
+  response_id INTEGER NOT NULL
+    REFERENCES responses(response_id),
+  contributor_id INTEGER NOT NULL
+    REFERENCES contributors(contributor_id),
+  PRIMARY KEY(response_id, contributor_id)
+);
+
 
 -- A handful of responses may have multiple authors and make it necessary to have a many-to-many relationship for responses and contributors.
 
@@ -107,3 +114,38 @@ CREATE TABLE podcast_responses (
     REFERENCES responses(response_id),
   PRIMARY KEY(podcast_id, response_id)
 );
+
+INSERT INTO editors (
+  editor_id,
+  name, 
+  slug, 
+  avatar_image_url) 
+VALUES (
+  0, 
+  'Editorial Team', 
+  'editors', 
+  'https://www.gravatar.com/avatar/?d=mp');
+
+INSERT INTO podcasts (podcast_id, 
+  date_created, 
+  podcast_post_url, 
+  slug, 
+  title, 
+  content, 
+  excerpt, 
+  featured_image, 
+  editor, 
+  mp3_file_url, 
+  type) 
+VALUES (
+  0, 
+  '2012-01-01T00:00:00', 
+  'htttps://religiousstudiesproject.com', 
+  'sample-podcast', 
+  'Sample Podcast', 
+  'Sample content', 
+  'Sample excerpt', 
+  0, 
+  0, 
+  'https://www.example.com/podcast-1.mp3', 
+  'podcast');

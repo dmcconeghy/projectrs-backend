@@ -98,5 +98,45 @@
       "48": "https://secure.gravatar.com/avatar/9daeefc297bbabfd012ad1d66f401056?s=48&d=mm&r=pg",
       "96": "https://secure.gravatar.com/avatar/9daeefc297bbabfd012ad1d66f401056?s=96&d=mm&r=pg"
     }
+  },
+  {
+    "editor_id": 24,
+    "name": "Jonathan Tuckett",
+    "slug": "tuckett",
+    "avatar_image_url": {
+      "24": "https://secure.gravatar.com/avatar/e7fbaabe0f5843478e8d581991e1d94f?s=24&d=mm&r=pg",
+      "48": "https://secure.gravatar.com/avatar/e7fbaabe0f5843478e8d581991e1d94f?s=48&d=mm&r=pg",
+      "96": "https://secure.gravatar.com/avatar/e7fbaabe0f5843478e8d581991e1d94f?s=96&d=mm&r=pg"
+    }
+  },
+  {
+    "editor_id": 6,
+    "name": "Knut",
+    "slug": "knut",
+    "avatar_image_url": {
+      "24": "https://secure.gravatar.com/avatar/e9e23435e38a0378648e3ceafd945d94?s=24&d=mm&r=pg",
+      "48": "https://secure.gravatar.com/avatar/e9e23435e38a0378648e3ceafd945d94?s=48&d=mm&r=pg",
+      "96": "https://secure.gravatar.com/avatar/e9e23435e38a0378648e3ceafd945d94?s=96&d=mm&r=pg"
+    }
+  },
+  {
+    "editor_id": 3,
+    "name": "Louise Connelly",
+    "slug": "louise",
+    "avatar_image_url": {
+      "24": "https://secure.gravatar.com/avatar/d2de1a120efb8159fa6fe228b2526aa4?s=24&d=mm&r=pg",
+      "48": "https://secure.gravatar.com/avatar/d2de1a120efb8159fa6fe228b2526aa4?s=48&d=mm&r=pg",
+      "96": "https://secure.gravatar.com/avatar/d2de1a120efb8159fa6fe228b2526aa4?s=96&d=mm&r=pg"
+    }
+  },
+  {
+    "editor_id": 12,
+    "name": "Thomas Coleman III",
+    "slug": "tommy",
+    "avatar_image_url": {
+      "24": "https://secure.gravatar.com/avatar/2a8c352cc459de632fc73ea97a12ace7?s=24&d=mm&r=pg",
+      "48": "https://secure.gravatar.com/avatar/2a8c352cc459de632fc73ea97a12ace7?s=48&d=mm&r=pg",
+      "96": "https://secure.gravatar.com/avatar/2a8c352cc459de632fc73ea97a12ace7?s=96&d=mm&r=pg"
+    }
   }
 ]

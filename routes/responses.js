@@ -1,10 +1,11 @@
 "use strict";
 
-/** Routes for podcasts. */
+/** Routes for responses. */
 
 const express = require("express");
 const { getResponses } = require("../helpers/direct_queries");
 const { getJSResponses} = require("../helpers/json_queries");
+const Response = require("../models/response");
 
 const router = express.Router({ mergeParams: true });
 
@@ -56,5 +57,15 @@ router.get("/", async function (req, res, next) {
     //     return next(err);
     // }
 });
+
+router.get("/:slug", async function (req, res, next) {
+    try {
+        const response = await Response.getResponseBySlug(req.params.slug);
+        return res.status(200).json( response );
+    } catch (err) {
+        return next(err);
+    }
+});
+
 
 module.exports = router

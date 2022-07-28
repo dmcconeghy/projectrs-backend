@@ -33,7 +33,7 @@ async function getJSResponses() {
         if (err) throw err;
     });
 
-    return JSON.parse(res) // returns tags json data.
+    return JSON.parse(res) // returns response json data.
 }
 
 async function getJSContributors() {
@@ -43,7 +43,17 @@ async function getJSContributors() {
         if (err) throw err;
     });
     
-    return JSON.parse(res) // returns tags json data.
+    return JSON.parse(res) // returns contributors json data.
 }
 
-module.exports = { getJSPodcasts, getJSTags, getJSResponses, getJSContributors };
+async function getJEditors() {
+    console.log("fetching editors")
+    
+    const res = fs.readFileSync(path.join(__dirname, "../json", "editorss.json"), 'utf8', (err) => {
+        if (err) throw err;
+    });
+    
+    return JSON.parse(res) // returns editors json data.
+}
+
+module.exports = { getJSPodcasts, getJSTags, getJSResponses, getJSContributors, getJEditors };

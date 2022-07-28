@@ -38,8 +38,12 @@ router.get("/", async function (req, res, next) {
         for (let i = 0; i < 5; i++) {   
             // console.log(responses.data[i].id)
             let episode = {
-                "id": episodes[i].id, 
-                "title": episodes[i].title, 
+                "id": episodes[i].id,
+                "date": episodes[i].date_created,
+                "title": episodes[i].title,
+                "slug": episodes[i].slug,
+                "url": episodes[i].mp3_file_url,
+                "excerpt": episodes[i].excerpt,
             }
             podcastList.push(episode)
         }
@@ -49,23 +53,16 @@ router.get("/", async function (req, res, next) {
         return next(err);
     }
 
-    // try {
-    //     const episodes = await getPodcasts()
-    //     const podcastList = []
-        
-    //     for (let i = 0; i < episodes.data.length; i++) {   
-    //         // console.log(responses.data[i].id)
-    //         let episode = {
-    //             "id": episodes.data[i].id, 
-    //             "title": episodes.data[i].title, 
-    //         }
-    //        podcastList.push(episode)
-    //     }
+    
+});
 
-    //     return res.status(200).json(podcastList);
-    // } catch (err) {
-    //     return next(err);
-    // }
+router.get("/:slug", async function (req, res, next) {
+    try {
+        const podcast = await Podcast.getPodcastBySlug(req.params.slug);
+        return res.status(200).json( podcast );
+    } catch (err) {
+        return next(err);
+    }
 });
 
 module.exports = router

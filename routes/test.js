@@ -11,8 +11,16 @@ const Editors = require("../models/editor");
 const Podcasts = require("../models/podcast");
 const Responses = require("../models/response");
 const Tags = require("../models/tags");
-
-
+const { dbInsertContributors, 
+        dbInsertEditors, 
+        dbInsertPodcasts, 
+        dbInsertResponses, 
+        dbInsertTags, 
+        dbInsertTypes, 
+        dbInsertPodcastContributors, 
+        dbInsertPodcastTags,
+        dbInsertPodcastResponses,
+        dbInsertResponseContributors } = require("../helpers/db_conversion");
 
 const router = express.Router({ mergeParams: true });
 
@@ -148,13 +156,12 @@ router.get("/responses", async function (req, res, next) {
             let response = {
                 "response_id": responses[i].id,
                 "date_created": responses[i].date_gmt,
-                "podcast_id": responses[i].acf.in_response_to,
+                "podcast_id": responses[i].acf.in_response_to[0],
                 "title": responses[i].title.rendered,
                 "slug": responses[i].slug,
                 "content": responses[i].content.rendered,
                 "excerpt": responses[i].excerpt.rendered,
-                "feature_image": responses[i].featured_media,
-                "editor": responses[i].author,
+                "featured_image": responses[i].featured_media,
                 "contributors": responses[i].acf.persons,
                 "tags": responses[i].tags,
             };
@@ -184,6 +191,209 @@ router.get("/jsonFetch/:title", async function (req, res, next) {
     } catch (err) {
         return next(err);
     }   
+});
+
+router.get("/dbINSERT/types", async function (req, res, next) {
+    try {
+        // const contributors = await getJSContributors();
+        const data = require("../json/types.json");
+
+        for (let type of data){
+            
+            await dbInsertTypes(type)
+        }
+
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/dbINSERT/contributors", async function (req, res, next) {
+    try {
+        // const contributors = await getJSContributors();
+        const data = require("../json/contributors.json");
+
+        for (let contributor of data){
+            
+           await dbInsertContributors(contributor)
+        }
+
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/dbINSERT/editors", async function (req, res, next) {
+    try {
+        // const editors = await getJSEditors();
+        const data = require("../json/editors.json");
+
+        for (let editor of data){
+            console.log(editor)
+            
+            await dbInsertEditors(editor)
+        }
+        
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/dbINSERT/podcasts", async function (req, res, next) {
+    try {
+        // const podcasts = await getJSPodcasts();
+        const data = require("../json/podcasts.json");
+
+        // const count = Object.keys(data).length;
+        // console.log(count);
+
+        for (let podcast of data){
+            // console.log(podcast)
+            await dbInsertPodcasts(podcast);
+            await dbInsertPodcastContributors(podcast);
+            await dbInsertPodcastTags(podcast);
+        }
+
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/dbINSERT/responses", async function (req, res, next) {
+    try {
+        // const responses = await getJSResponses();
+        const data = require("../json/responses.json");
+
+        for (let response of data){
+            
+            await dbInsertResponses(response);
+            await dbInsertResponseContributors(response);
+            await dbInsertPodcastResponses(response);
+        }
+
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/dbINSERT/tags", async function (req, res, next) {
+    try {
+        // const tags = await getJSTags();
+        const data = require("../json/tags.json");
+
+        for (let tag of data){
+            // console.log(tag)
+            await dbInsertTags(tag)
+        }
+
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/textResponseLength/", async function (req, res, next) {
+    try {
+        const data = require("../json/responses.json");
+
+        for (let response of data){
+            
+            // let text = JSON.stringify(response.content)
+            // console.log(text)
+            let textLength = (response.content).length
+            
+            console.log(textLength)
+            if (textLength > 65535) {
+                console.log(`${response.title} is too long`)
+            }
+        }
+
+        return res.status(200).json( "response lengths checked" );
+
+    }
+    catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/textPodcastLength/", async function (req, res, next) {
+    try {
+        const data = require("../json/podcasts.json");
+
+        for (let podcast of data){
+            
+            // let text = JSON.stringify(response.content)
+            // console.log(text)
+            let textLength = (podcast.content).length
+            
+            console.log(textLength)
+            if (textLength > 65535) {
+                console.log(`${podcast.title} is too long`)
+            }
+        }
+
+        return res.status(200).json( "Podcast Lengths checked" );
+
+    }
+    catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/responsesMissingPodcasts", async function (req, res, next) {
+    try { 
+        const data = require("../json/responses.json");
+
+        let output = []
+
+        for (let response of data) {
+
+            if (response.podcast_id == null) {
+                output.push({
+                    "response_id": response.response_id,
+                    "title": response.title,
+                    "date_created" : response.date_created,
+                    "slug" : response.slug
+                })
+            }
+
+        }
+
+        return res.status(200).json( output );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/podcastsMultipleResponses", async function (req, res, next) {
+    try {
+        const data = require("../json/podcasts.json");
+
+        let output = []
+
+        for (let podcast of data) {
+
+            if (podcast.response.length > 2) {
+                output.push({
+                    "podcast_id": podcast.podcast_id,
+                    "title": podcast.title,
+                    "date_created" : podcast.date_created,
+                    "slug" : podcast.slug
+                })
+            }
+
+        }
+
+        return res.status(200).json( output );
+
+    } catch (err) {
+        return next(err);
+    }
 });
 
 module.exports = router;

@@ -5,15 +5,20 @@ const { NotFoundError } = require("../expressError");
 const { sqlForPartialUpdate } = require("../helpers/sql");
 const DATA = require("../json/contributors.json");
 
-/** Related functions for Tags. */
+/** Related functions for Contributors. */
 
 class Contributor {
-     /** 
-      * Create a tag (from data), 
-      * update db, 
-      * return new tag data.
-      * 
-      **/
+     
+    static async getContributorBySlug(slug) {
+        const persons = await db.query(
+            `SELECT * FROM contributors WHERE slug = $1`,
+            [slug]);
+        const person = persons.rows[0];
+
+        if (!person) throw new NotFoundError(`Response not found`); 
+
+        return person;
+    }
 
     static async searchJSON(name) {
         const result = Object.values(DATA);

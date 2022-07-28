@@ -4,7 +4,7 @@ const db = require("../db");
 const { NotFoundError } = require("../expressError");
 const { sqlForPartialUpdate } = require("../helpers/sql");
 
-/** Related functions for Tags. */
+/** Related functions for Responses. */
 
 class Response {
      /** 
@@ -13,6 +13,17 @@ class Response {
       * return new response data.
       * 
       **/
+
+   static async getResponseBySlug(slug) {
+      const responses = await db.query(
+         `SELECT * FROM responses WHERE slug = $1`,
+         [slug]);
+      const response =responses.rows[0];
+
+      if (!response) throw new NotFoundError(`Response not found`); 
+
+      return response;
+      }
 
      static async create(data) {
         const result = await db.query(
