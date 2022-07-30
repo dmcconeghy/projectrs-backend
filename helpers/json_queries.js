@@ -7,7 +7,7 @@ const fs = require("fs");
 const path = require("path");
 
 async function getJSPodcasts() {
-    console.log("fetching podcasts")
+    console.log("fetching podcasts from JSON archive")
     
     const res = fs.readFileSync(path.join(__dirname, "../json", "podcasts.json"), 'utf8', (err) => {
         if (err) throw err;
@@ -17,7 +17,7 @@ async function getJSPodcasts() {
 }
 
 async function getJSTags() {
-    console.log("fetching tags")
+    console.log("fetching tags from JSON archive")
 
     const res = fs.readFileSync(path.join(__dirname, "../json", "tags.json"), 'utf8', (err) => {
         if (err) throw err;
@@ -27,7 +27,7 @@ async function getJSTags() {
 }
 
 async function getJSResponses() {
-    console.log("fetching responses")
+    console.log("fetching responses from JSON archive")
     
     const res = fs.readFileSync(path.join(__dirname, "../json", "responses.json"), 'utf8', (err) => {
         if (err) throw err;
@@ -37,7 +37,7 @@ async function getJSResponses() {
 }
 
 async function getJSContributors() {
-    console.log("fetching contributors")
+    console.log("fetching contributors from JSON archive")
     
     const res = fs.readFileSync(path.join(__dirname, "../json", "contributors.json"), 'utf8', (err) => {
         if (err) throw err;
@@ -47,7 +47,7 @@ async function getJSContributors() {
 }
 
 async function getJEditors() {
-    console.log("fetching editors")
+    console.log("fetching editors from JSON archive")
     
     const res = fs.readFileSync(path.join(__dirname, "../json", "editorss.json"), 'utf8', (err) => {
         if (err) throw err;

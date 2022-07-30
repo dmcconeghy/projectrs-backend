@@ -1,9 +1,0 @@
-{ "types": {
-        "podcast": "podcast",
-        "response": "response",
-        "persons": "persons",
-        "transcript": "transcript",
-        "playlist": "playlist",
-        "opportunities": "opportunities"
-    }
-}

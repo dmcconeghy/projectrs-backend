@@ -330,18 +330,18 @@ async function dbInsertPodcastResponses(data) {
                     `SELECT COUNT(*) 
                     FROM podcast_responses 
                     WHERE podcast_id = $1 and response_id = $2`, 
-                    [response.podcast_id, response.response_id]);
+                    [data.id, response]);
 
                 if (duplicate_check.rows[0].count === "0") {
 
-                    console.log(`Adding response ${response.response_id} from podcast ${response.podcast_id}`);
+                    console.log(`Adding response ${response} from podcast ${data.id}`);
 
                     const sql = `INSERT INTO podcast_responses (
                                     podcast_id, response_id)
                                 VALUES ($1, $2)
                                 RETURNING *`;
 
-                    const values = [response.podcast_id, response.response_id];
+                    const values = [data.id, response];
 
                     await db.query(sql, values);
 
@@ -393,4 +393,31 @@ async function dbInsertResponseContributors (data) {
     }
 }
 
-module.exports = { dbInsertResponseContributors, dbInsertPodcastResponses, dbInsertPodcastTags, dbInsertPodcastContributors, dbInsertTypes, dbInsertContributors, dbInsertEditors, dbInsertPodcasts, dbInsertResponses, dbInsertTags };
+async function dbInsertMediaLinks(data) {
+    try {
+        if (data) {
+
+            const result = await db.query(
+                `UPDATE podcasts 
+                SET featured_image_url = $2 
+                WHERE podcast_id = $1`, 
+                [data.id, data.featured_image_url]);
+            
+        }
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
+module.exports = {  dbInsertMediaLinks, 
+                    dbInsertResponseContributors, 
+                    dbInsertPodcastResponses, 
+                    dbInsertPodcastTags, 
+                    dbInsertPodcastContributors, 
+                    dbInsertTypes, 
+                    dbInsertContributors, 
+                    dbInsertEditors, 
+                    dbInsertPodcasts, 
+                    dbInsertResponses, 
+                    dbInsertTags };

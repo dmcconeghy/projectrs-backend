@@ -2,8 +2,8 @@
 
 const db = require("../db");
 const { NotFoundError } = require("../expressError");
-const { sqlForPartialUpdate } = require("../helpers/sql");
-const DATA = require("../json/podcasts.json");
+const { getMediaURL } = require("../helpers/model_queries");
+const Contributor = require("./contributor");
 
 /** Related functions for Podcasts. */
 
@@ -16,6 +16,7 @@ class Podcast {
       **/
    
    static async getPodcastBySlug(slug) {
+      
       const podcasts = await db.query(
          `SELECT * FROM podcasts WHERE slug = $1`,
          [slug]);
@@ -25,74 +26,94 @@ class Podcast {
 
       return podcast;
       }
+   static async getPodcastById(id) {
 
+      const podcasts = await db.query(
+         `SELECT * FROM podcasts WHERE podcast_id = $1`,
+         [id]);
 
-   static async create(data) {
-      const result = await db.query(
-            `INSERT INTO podcasts (podcast_id,
-                                 date_created,
-                                 podcast_post_url,
-                                 slug,
-                                 title,
-                                 content,
-                                 excerpt,
-                                 featured_image,
-                                 editor,
-                                 mp3_file_url,
-                                 type,
-                                 transcript)
-            VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12)
-            RETURNING    podcast_id, 
-                           date_created, 
-                           podcast_post_url, 
-                           slug, 
-                           title, 
-                           content, 
-                           excerpt, 
-                           featured_image, 
-                           editor, 
-                           mp3_file_url, 
-                           type
-                           transcript`,
-         [
-         data.podcast_id,
-         data.date_created,
-         data.podcast_post_url,
-         data.slug,
-         data.title,
-         data.content,
-         data.excerpt,
-         data.featured_image,
-         data.editor,
-         data.mp3_file_url,
-         data.type,
-         data.transcript
-         ]);
-      let podcast = result.rows[0];
+      const podcast = podcasts.rows[0];
 
-      return podcast;
+      if (!podcast) throw new NotFoundError(`Podcast not found`);
+
+      return podcast
    }
 
-   static async findAll({ title } = {}) {
+   static async findAll(searchFilters = {}) {
       let query = `SELECT * FROM podcasts`;
       let whereExpressions = [];
       let queryValues = [];
 
+      const { title, content, contributor, page, limit } = searchFilters; 
+
       // For each possible search term, add to whereExpressions and
       // queryValues so we can generate the right SQL
       if (title) {
-         whereExpressions.push("title ILIKE $1");
          queryValues.push(`%${title}%`);
+         whereExpressions.push(`title ILIKE $${queryValues.length}`);
       }
+
+      if (content) {
+         queryValues.push(`%${content}%`);
+         whereExpressions.push(`content ILIKE $${queryValues.length}`);
+      }
+
+      if (contributor) {
+         const persons = await Contributor.findAll({ "name" : contributor });
+         
+         const people_ids = persons.map(person => person.contributor_id);
+
+         for (const person of people_ids) {
+            const union = `SELECT * FROM podcast_contributors WHERE contributor_id = ${person}`;
+            const result = await db.query(union);
+            
+            for (const row of result.rows) {
+               queryValues.push(row.podcast_id);
+               
+               whereExpressions.push(`podcast_id = $${queryValues.length}`);
+               
+            }
+           
+         }
+         // queryValues.push(`%${persons}%`);
+         // whereExpressions.push(`content ILIKE $${queryValues.length}`);
+      }
+
+      
 
       if (whereExpressions.length > 0) {
-         query += ` WHERE ${whereExpressions.join(" AND ")}`;
+         query += ` WHERE ${whereExpressions.join(" OR ")}`;
       }
 
-      const result = await db.query(query, queryValues);
-      let podcasts = result.rows;
+      query += ` ORDER BY date_created ASC`;
 
-      return podcasts;
+      const result = await db.query(query, queryValues);
+
+      if (page && limit) {
+         
+         let total = (result.rows).length;
+
+         let pages = Math.floor(total / limit);
+
+         let subset = []
+
+         for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
+            if (result.rows[i]){
+               subset.push(result.rows[i])
+            }
+         }
+
+         return subset
+      }
+      
+      return result.rows;
+   }
+
+
+
+   static async fetchMedia(id) {
+
+      return await getMediaURL("podcast", id);
    }
 }
 

@@ -35,6 +35,7 @@ CREATE TABLE podcasts (
   content TEXT NOT NULL,
   excerpt TEXT NOT NULL,
   featured_image INTEGER NOT NULL DEFAULT 0,
+  featured_image_url TEXT NOT NULL DEFAULT 'https://www.religiousstudiesproject.com/wp-content/uploads/2022/02/new_logo_large_1400x1400.png'
   editor INTEGER NOT NULL
     REFERENCES editors(editor_id),
   mp3_file_url TEXT NOT NULL DEFAULT 'not found',

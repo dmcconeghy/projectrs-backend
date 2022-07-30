@@ -6,12 +6,14 @@ const express = require("express");
 const { getAllPodcasts, getAllContributors, getAllEditors, getAllTags, getAllResponses } = require("../helpers/archive");
 const fs = require("fs");
 const path = require("path");
-const Contributors = require("../models/contributor");
-const Editors = require("../models/editor");
-const Podcasts = require("../models/podcast");
-const Responses = require("../models/response");
-const Tags = require("../models/tags");
-const { dbInsertContributors, 
+const Contributor = require("../models/contributor");
+const Editor = require("../models/editor");
+const Podcast = require("../models/podcast");
+const Response = require("../models/response");
+const Tag = require("../models/tags");
+const { 
+        dbInsertMediaLinks,
+        dbInsertContributors, 
         dbInsertEditors, 
         dbInsertPodcasts, 
         dbInsertResponses, 
@@ -21,6 +23,7 @@ const { dbInsertContributors,
         dbInsertPodcastTags,
         dbInsertPodcastResponses,
         dbInsertResponseContributors } = require("../helpers/db_conversion");
+
 
 const router = express.Router({ mergeParams: true });
 
@@ -255,6 +258,7 @@ router.get("/dbINSERT/podcasts", async function (req, res, next) {
             await dbInsertPodcasts(podcast);
             await dbInsertPodcastContributors(podcast);
             await dbInsertPodcastTags(podcast);
+            await dbInsertPodcastResponses(podcast);
         }
 
         return res.status(200).json( "import complete" );
@@ -272,7 +276,7 @@ router.get("/dbINSERT/responses", async function (req, res, next) {
             
             await dbInsertResponses(response);
             await dbInsertResponseContributors(response);
-            await dbInsertPodcastResponses(response);
+            
         }
 
         return res.status(200).json( "import complete" );
@@ -391,6 +395,52 @@ router.get("/podcastsMultipleResponses", async function (req, res, next) {
 
         return res.status(200).json( output );
 
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/persons/featuredMedia/:id", async function (req, res, next) {
+    try {
+        const id = req.params.id;
+        const person = await Contributor.getContributorById(id);
+        const url = await Contributor.fetchMedia(id);
+
+        return res.status(200).json( { person, url } );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/podcast/featuredMedia/", async function (req, res, next) {
+    try {
+
+        const data = require("../json/podcasts.json");
+
+        for (let podcast of data) {
+
+            if (podcast.featured_image === 27105) {
+                continue;
+            }
+
+            let id = podcast.id;
+            const url = await Podcast.fetchMedia(id);
+
+            await dbInsertMediaLinks({"id": id, "featured_image_url": url});
+        }
+        return res.status(200).json( "import complete" );
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/response/featuredMedia/:id", async function (req, res, next) {
+    try {
+        const id = req.params.id;
+        const response = await Response.getResponseById(id);
+        const url = await Response.fetchMedia(id);
+
+        return res.status(200).json( { response, url } );
     } catch (err) {
         return next(err);
     }
