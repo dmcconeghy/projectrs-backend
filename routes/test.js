@@ -258,7 +258,7 @@ router.get("/dbINSERT/podcasts", async function (req, res, next) {
             await dbInsertPodcasts(podcast);
             await dbInsertPodcastContributors(podcast);
             await dbInsertPodcastTags(podcast);
-            await dbInsertPodcastResponses(podcast);
+            
         }
 
         return res.status(200).json( "import complete" );
@@ -275,7 +275,8 @@ router.get("/dbINSERT/responses", async function (req, res, next) {
         for (let response of data){
             
             await dbInsertResponses(response);
-            await dbInsertResponseContributors(response);
+            // await dbInsertResponseContributors(response);
+            // await dbInsertPodcastResponses(podcast);
             
         }
 
