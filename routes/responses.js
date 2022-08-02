@@ -30,7 +30,7 @@ router.get("/", async function (req, res, next) {
         // schema validators can go here
         
         const responses = await Response.findAll(q);
-        return res.status(200).json({ responses });
+        return res.status(200).json( responses );
     } catch (err) {
         next(err);
     }

@@ -91,8 +91,6 @@ CREATE TABLE responses (
   content TEXT NOT NULL,
   excerpt TEXT NOT NULL,
   featured_image INTEGER NOT NULL DEFAULT 0,
-  editor INTEGER NOT NULL
-    REFERENCES editors(editor_id),
   type TEXT NOT NULL DEFAULT 'response'
     REFERENCES types(name) 
 );

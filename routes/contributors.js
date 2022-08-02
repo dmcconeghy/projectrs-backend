@@ -29,7 +29,7 @@ router.get("/", async function (req, res, next) {
 
         const contributors = await Contributor.findAll(q);
 
-        return res.status(200).json({ contributors });
+        return res.status(200).json( contributors );
     } catch (err) {
         return next(err);
     }
