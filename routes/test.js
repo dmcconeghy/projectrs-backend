@@ -275,9 +275,18 @@ router.get("/dbINSERT/responses", async function (req, res, next) {
         for (let response of data){
             
             await dbInsertResponses(response);
-            // await dbInsertResponseContributors(response);
-            // await dbInsertPodcastResponses(podcast);
             
+        }
+
+        for (let response of data){
+            await dbInsertResponseContributors(response);
+            
+        }
+
+        const data_podcasts = require("../json/podcasts.json");
+
+        for (let podcast of data_podcasts){
+            await dbInsertPodcastResponses(podcast);
         }
 
         return res.status(200).json( "import complete" );
