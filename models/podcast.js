@@ -109,7 +109,16 @@ class Podcast {
       return result.rows;
    }
 
+   static async getTagsByPodcastId(podcastId) {
+      const tags = await db.query(
+          `SELECT * FROM podcast_tags WHERE podcast_id = $1`,
+            [podcastId]);
+         const tagResult = tags.rows;
 
+         if (!tagResult) throw new NotFoundError(`Tags not found`); 
+
+         return tagResult;
+   }
 
    static async fetchMedia(id) {
 

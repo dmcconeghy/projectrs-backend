@@ -36,10 +36,44 @@ router.get("/", async function (req, res, next) {
     }
 });
 
-router.get("/:slug", async function (req, res, next) {
+// !isNaN(req.params.id_or_slug
+
+router.get("/:id_or_slug", async function (req, res, next) {
+    console.log("Fetching podcast by id or slug")
     try {
-        const podcast = await Podcast.getPodcastBySlug(req.params.slug);
-        return res.status(200).json( podcast );
+        
+        if (!isNaN(req.params.id_or_slug)) {
+            console.log(parseInt(req.params.id_or_slug));
+            console.log("Input is id number :", req.params.id_or_slug)
+
+            const podcast = await Podcast.getPodcastById(req.params.id_or_slug);
+            return res.status(200).json( podcast );
+
+        } else {
+            console.log("Input is slug :", req.params.id_or_slug)
+
+            const podcast = await Podcast.getPodcastBySlug(req.params.id_or_slug);
+            return res.status(200).json( podcast );
+        }
+    
+      
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/:id/tags", async function (req, res, next) {
+    console.log("Fetching tags by id")
+    try {
+        console.debug(`id: ${req.params.id}`)
+
+        const podcasts = await Podcast.getTagsByPodcastId(req.params.id);
+
+        if (podcasts.length === 0) {
+            return res.status(404).json({ message: "No tags found" });
+        } else{
+            return res.status(200).json( podcasts );
+        }
     } catch (err) {
         return next(err);
     }

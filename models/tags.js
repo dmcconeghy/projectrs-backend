@@ -25,7 +25,7 @@ class Tag {
         return tag;
         }
 
-     static async searchTags(name) {
+      static async searchTags(name) {
         let query = `SELECT * FROM tags`;
         let whereExpressions = [];
         let queryValues = [];
@@ -87,6 +87,20 @@ class Tag {
          return result.rows;
 
       }
+
+      static async getPodcastsByTagId(podcastId) {
+         const tags = await db.query(
+             `SELECT * FROM podcast_tags WHERE tag_id = $1`,
+               [podcastId]);
+            const tagResult = tags.rows;
+   
+            if (!tagResult) throw new NotFoundError(`Podcast not found`); 
+   
+            return tagResult;
+      }
+
+
+
 }
 
 module.exports = Tag;

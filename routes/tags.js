@@ -54,11 +54,12 @@ router.get("/", async function (req, res, next) {
 //     }
 // });
 
-router.get("/:id_or_slug", async function (req, res, next) {
+router.get("/:id_or_slug/", async function (req, res, next) {
     console.log("Fetching tag by id or slug")
     try {
         
-        if (Number.isInteger(parseInt(req.params.id_or_slug))) {
+        if (!isNaN(req.params.id_or_slug)) {
+            console.log(parseInt(req.params.id_or_slug));
             console.log("Input is id number :", req.params.id_or_slug)
 
             const tag = await Tag.getTagById(req.params.id_or_slug);
@@ -85,6 +86,23 @@ router.get("/search/:query", async function (req, res, next) {
             return res.status(404).json({ message: "No tags found" });
         } else {
             return res.status(200).json(tags);
+        }
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/:id/podcasts", async function (req, res, next) {
+    console.log("Fetching Podcasts by id")
+    try {
+        console.debug(`id: ${req.params.id}`)
+
+        const podcasts = await Tag.getPodcastsByTagId(req.params.id);
+
+        if (podcasts.length === 0) {
+            return res.status(404).json({ message: "No podcasts found" });
+        } else{
+            return res.status(200).json( podcasts );
         }
     } catch (err) {
         return next(err);
