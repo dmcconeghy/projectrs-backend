@@ -42,6 +42,51 @@ class Tag {
 
         }
 
+      static async getTagById(id) {
+         const tag = await db.query(
+             `SELECT * FROM tags WHERE tag_id = $1`,
+               [id]);
+            const tagResult = tag.rows[0];
+   
+            if (!tagResult) throw new NotFoundError(`Tag not found`); 
+   
+            return tagResult;
+      }
+
+      static async findAll(searchFilters = {}) {
+         let query = `SELECT * FROM tags`;
+         let whereExpressions = [];
+         let queryValues = [];
+
+         const { name, page, limit } = searchFilters;
+
+         if (name) {
+            queryValues.push(`%${name}%`);
+            whereExpressions.push(`name ILIKE $${queryValues.length}`);
+         }
+
+        const result = await db.query(query, queryValues);
+
+         if (page && limit) {
+         
+            let total = (result.rows).length;
+   
+            // let pages = Math.floor(total / limit);
+   
+            let subset = []
+   
+            for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
+               if (result.rows[i]){
+                  subset.push(result.rows[i])
+               }
+            }
+   
+            return subset
+         } 
+
+         return result.rows;
+
+      }
 }
 
 module.exports = Tag;

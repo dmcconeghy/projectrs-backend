@@ -3,31 +3,22 @@
 /** Routes for podcasts. */
 
 const express = require("express");
-const { getTags } = require("../helpers/direct_queries");
-const { getJSTags} = require("../helpers/json_queries");
+
 const Tag = require("../models/tags");
 
 const router = express.Router({ mergeParams: true });
 
 router.get("/", async function (req, res, next) {
+
+    const q = req.query;
+
     try {
         
-        const tags = await getJSTags()    
+        const tags = await Tag.findAll(q);    
 
         console.log(tags.length)
-        console.log(tags[0])
-        const tagsList = []
-            
-        for (let i = 0; i < 5; i++) {   
-            // console.log(tags.data[i].id)
-            let tag = {
-                "id": tags[i].id, 
-                "name": tags[i].name, 
-            }
-            tagsList.push(tag)
-        }
 
-        return res.status(200).json(tagsList);
+        return res.status(200).json(tags);
     } catch (err) {
         return next(err);
     }
@@ -50,17 +41,36 @@ router.get("/", async function (req, res, next) {
     // }
 });
 
-router.get("/:slug", async function (req, res, next) {
-    console.log("Fetching tag by slug")
-    try {
+// router.get("/:slug", async function (req, res, next) {
+//     console.log("Fetching tag by slug")
+//     try {
+//         console.log(Number.isInteger(req.params.slug))
 
-        if (req.params.slug === "search") {
-            const tags = await Tag.searchTags(req.params.query)
-            return res.status(200).json(tags);
+//         const tag = await Tag.getTagBySlug(req.params.slug);
+//         return res.status(200).json(tag);
+
+//     } catch (err) {
+//         return next(err);
+//     }
+// });
+
+router.get("/:id_or_slug", async function (req, res, next) {
+    console.log("Fetching tag by id or slug")
+    try {
+        
+        if (Number.isInteger(parseInt(req.params.id_or_slug))) {
+            console.log("Input is id number :", req.params.id_or_slug)
+
+            const tag = await Tag.getTagById(req.params.id_or_slug);
+            return res.status(200).json(tag);
+
         } else {
-            const tag = await Tag.getTagBySlug(req.params.slug);
+            console.log("Input is slug :", req.params.id_or_slug)
+
+            const tag = await Tag.getTagBySlug(req.params.id_or_slug);
             return res.status(200).json(tag);
         }
+
     } catch (err) {
         return next(err);
     }

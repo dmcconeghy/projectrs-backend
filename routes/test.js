@@ -456,4 +456,15 @@ router.get("/response/featuredMedia/:id", async function (req, res, next) {
     }
 });
 
+router.get("/unsplash/", async function (req, res, next) {
+    try {
+        console.log("Retrieving unsplash images");
+        const data = await axios.get("https://api.unsplash.com/photos/random?client_id=${process.env.UNSPLASH_ACCESS_KEY}&query=religion&orientation=landscape&count=1");
+
+        return res.status(200).json( data.data );
+    } catch (err) {
+        return next(err);
+    }
+});
+
 module.exports = router;
