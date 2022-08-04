@@ -111,13 +111,13 @@ class Podcast {
 
    static async getTagsByPodcastId(podcastId) {
       const tags = await db.query(
-          `SELECT * FROM podcast_tags WHERE podcast_id = $1`,
+          `SELECT tag_id FROM podcast_tags WHERE podcast_id = $1`,
             [podcastId]);
-         const tagResult = tags.rows;
+         const tagsResult = tags.rows;
 
-         if (!tagResult) throw new NotFoundError(`Tags not found`); 
+         if (!tagsResult) throw new NotFoundError(`Tags not found`); 
 
-         return tagResult;
+         return tagsResult;
    }
 
    static async fetchMedia(id) {

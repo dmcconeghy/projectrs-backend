@@ -10,7 +10,7 @@ const Contributor = require("../models/contributor");
 const Editor = require("../models/editor");
 const Podcast = require("../models/podcast");
 const Response = require("../models/response");
-const Tag = require("../models/tags");
+const Tag = require("../models/tag");
 const { 
         dbInsertMediaLinks,
         dbInsertContributors, 

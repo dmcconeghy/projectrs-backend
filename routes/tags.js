@@ -4,7 +4,8 @@
 
 const express = require("express");
 
-const Tag = require("../models/tags");
+const Tag = require("../models/tag");
+const Podcast = require("../models/podcast");
 
 const router = express.Router({ mergeParams: true });
 
@@ -40,19 +41,6 @@ router.get("/", async function (req, res, next) {
     //     return next(err);
     // }
 });
-
-// router.get("/:slug", async function (req, res, next) {
-//     console.log("Fetching tag by slug")
-//     try {
-//         console.log(Number.isInteger(req.params.slug))
-
-//         const tag = await Tag.getTagBySlug(req.params.slug);
-//         return res.status(200).json(tag);
-
-//     } catch (err) {
-//         return next(err);
-//     }
-// });
 
 router.get("/:id_or_slug/", async function (req, res, next) {
     console.log("Fetching tag by id or slug")
@@ -97,8 +85,18 @@ router.get("/:id/podcasts", async function (req, res, next) {
     try {
         console.debug(`id: ${req.params.id}`)
 
-        const podcasts = await Tag.getPodcastsByTagId(req.params.id);
+        const podcastsList = await Tag.getPodcastsByTagId(req.params.id);
+        console.log(podcastsList)
 
+        let podcasts= []
+
+        for (let podcast of podcastsList) {
+            console.log(podcast.podcast_id)
+            const item = async () => await Podcast.getPodcastById(podcast.podcast_id);
+            
+            podcasts.push(await item())
+        }
+    
         if (podcasts.length === 0) {
             return res.status(404).json({ message: "No podcasts found" });
         } else{

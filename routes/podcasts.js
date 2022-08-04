@@ -5,6 +5,7 @@
 const express = require("express");
 const { BadRequestError } = require("../expressError");
 const Podcast = require("../models/podcast");
+const Tag = require("../models/tag");
 
 
 const router = express.Router({ mergeParams: true });
@@ -40,6 +41,7 @@ router.get("/", async function (req, res, next) {
 
 router.get("/:id_or_slug", async function (req, res, next) {
     console.log("Fetching podcast by id or slug")
+
     try {
         
         if (!isNaN(req.params.id_or_slug)) {
@@ -67,12 +69,20 @@ router.get("/:id/tags", async function (req, res, next) {
     try {
         console.debug(`id: ${req.params.id}`)
 
-        const podcasts = await Podcast.getTagsByPodcastId(req.params.id);
+        const tagsList = await Podcast.getTagsByPodcastId(req.params.id);
 
-        if (podcasts.length === 0) {
+        let tags = []
+
+        for (let tag of tagsList){
+            console.log(tag.tag_id)
+            const item = async () => await Tag.getTagById(tag.tag_id);
+            tags.push(await item())
+        }
+
+        if (tags.length === 0) {
             return res.status(404).json({ message: "No tags found" });
         } else{
-            return res.status(200).json( podcasts );
+            return res.status(200).json( tags );
         }
     } catch (err) {
         return next(err);
