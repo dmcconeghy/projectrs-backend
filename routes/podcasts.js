@@ -122,5 +122,29 @@ router.get("/:id/contributors", async function (req, res, next) {
     }
 });
 
+router.get("/:id/responses", async function (req, res, next) {
+    console.log("Fetching responses for podcast")
+    try {
+
+        const responsesList = await Podcast.getResponsesByPodcastId(req.params.id);
+
+        let responses = []
+
+        for (let response of responsesList){
+
+            const item = async () => await Response.getResponseById(response.response_id);
+            responses.push(await item())
+        }
+
+        if (responses.length === 0) {
+            return res.status(404).json({ message: "No responses found" });
+        } else{
+            return res.status(200).json( responses );
+        }
+    } catch (err) {
+        return next(err);
+    }
+});
+
 
 module.exports = router

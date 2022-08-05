@@ -132,6 +132,17 @@ class Podcast {
 
       return await getMediaURL("podcast", id);
    }
+
+   static async getResponsesByPodcastId(podcastId) {
+      const responses = await db.query(
+         `SELECT * FROM podcast_responses WHERE podcast_id = $1`,
+         [podcastId]);
+      const response = responses.rows;
+
+      if (!response) throw new NotFoundError(`Responses not found`); 
+
+      return response;
+   }
 }
 
 module.exports = Podcast;

@@ -15,37 +15,48 @@ class Tag {
      */
 
       static async findAll(searchFilters = {}) {
-      let query = `SELECT * FROM tags`;
-      let whereExpressions = [];
-      let queryValues = [];
 
-      const { name, page, limit } = searchFilters;
+         let query = `SELECT * FROM tags`;
+         let whereExpressions = [];
+         let queryValues = [];
 
-      if (name) {
-         queryValues.push(`%${name}%`);
-         whereExpressions.push(`name ILIKE $${queryValues.length}`);
-      }
+         const { name, page, limit } = searchFilters;
 
-     const result = await db.query(query, queryValues);
-
-      if (page && limit) {
-      
-         let total = (result.rows).length;
-
-         // let pages = Math.floor(total / limit);
-
-         let subset = []
-
-         for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
-            if (result.rows[i]){
-               subset.push(result.rows[i])
-            }
+         if (name) {
+            queryValues.push(`%${name}%`);
+            whereExpressions.push(`name ILIKE $${queryValues.length}`);
          }
 
-         return subset
-      } 
+         const response = await db.query(query, queryValues);
+      
+         let pagination = [];
 
-      return result.rows;
+         let total = (response.rows).length;
+
+         let pages =  Math.floor(total / (limit || 10));
+
+         if (page && limit) {
+            
+            total = (response.rows).length;
+
+            pages = Math.floor(total / limit);
+
+            for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
+               if (response.rows[i]){
+                  pagination.push(response.rows[i]);
+               }
+            }
+
+         };
+
+         return { 
+                  "total_results": total, 
+                  "total_pages": pages, 
+                  "page" : +page, 
+                  "limit" : +limit,
+                  "page_results": pagination,  
+                  "full_results": response.rows  
+               } 
 
       }
 

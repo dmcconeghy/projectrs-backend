@@ -63,23 +63,8 @@ router.get("/:id_or_slug/", async function (req, res, next) {
     }
 });
 
-router.get("/search/:query", async function (req, res, next) {
-    console.log("Fetching tag by query :", req.params.query)
-    try {
-        
-        const tags = await Tag.searchTags(req.params.query);
-        if (tags.length === 0) {
-            return res.status(404).json({ message: "No tags found" });
-        } else {
-            return res.status(200).json(tags);
-        }
-    } catch (err) {
-        return next(err);
-    }
-});
-
 router.get("/:id/podcasts", async function (req, res, next) {
-    console.log("Fetching Podcasts by id")
+    console.log("Fetching Podcasts by Tag id")
     try {
         console.debug(`id: ${req.params.id}`)
 
@@ -104,5 +89,50 @@ router.get("/:id/podcasts", async function (req, res, next) {
         return next(err);
     }
 });
+
+// Response Tags are currently absent from the API/DB
+// To implment this, we would need to add a new table to the DB
+router.get("/:id/responses", async function (req, res, next) {
+    console.log("Fetching Responses by Tag id")
+    try {
+        console.debug(`id: ${req.params.id}`)
+
+        const responsesList = await Response.getResponsesByTagId(req.params.id);
+        console.log(responsesList)
+
+        let responses= []
+
+        for (let response of responsesList) {
+            console.log(response.response_id)
+            const item = async () => await Response.getResponseById(response.response_id);
+            
+            responses.push(await item())
+        }
+    
+        if (responses.length === 0) {
+            return res.status(404).json({ message: "No responses found" });
+        } else{
+            return res.status(200).json( responses );
+        }
+    } catch (err) {
+        return next(err);
+    }
+});
+
+// Search Route deprectaed in favor of filters on "/" route
+// router.get("/search/:query", async function (req, res, next) {
+//     console.log("Fetching tag by query :", req.params.query)
+//     try {
+        
+//         const tags = await Tag.searchTags(req.params.query);
+//         if (tags.length === 0) {
+//             return res.status(404).json({ message: "No tags found" });
+//         } else {
+//             return res.status(200).json(tags);
+//         }
+//     } catch (err) {
+//         return next(err);
+//     }
+// });S
 
 module.exports = router
