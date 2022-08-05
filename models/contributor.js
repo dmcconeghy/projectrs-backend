@@ -83,11 +83,22 @@ class Contributor {
                   "full_results": response.rows  
                } 
 
-      }
+    }
 
     static async fetchMedia(id) {
 
         return await getMediaURL("persons", id);
+    }
+
+    static async getPodcastsByContributorId(id) {
+        const podcasts = await db.query(
+            `SELECT * FROM podcasts_contributors WHERE contributor_id = $1`,
+            [id]);
+        const response = podcasts.rows[0];
+
+        if (!response) throw new NotFoundError(`Podcast not found`); 
+
+        return response;
     }
 }
 

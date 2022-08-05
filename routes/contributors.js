@@ -6,6 +6,7 @@ const express = require("express");
 const { getContributors } = require("../helpers/direct_queries");
 const { getJSContributors} = require("../helpers/json_queries");
 const Contributor = require("../models/contributor");
+const Podcast = require("../models/podcast");
 
 const router = express.Router({ mergeParams: true });
 
@@ -36,13 +37,54 @@ router.get("/", async function (req, res, next) {
 
 });
 
-router.get("/:slug", async function (req, res, next) {
+router.get("/:id_or_slug", async function (req, res, next) {
+    console.log("Fetching contributor by id or slug")
+
     try {
-        const contributor = await Contributor.getContributorBySlug(req.params.slug);
-        return res.status(200).json(contributor);
+
+        if (!isNaN(req.params.id_or_slug)) {
+            // console.log(parseInt(req.params.id_or_slug));
+            console.log("Input is id number :", req.params.id_or_slug)
+
+            const contributor = await Contributor.getContributorBySlug(req.params.id_or_slug);
+            return res.status(200).json( contributor );
+        } else {
+            console.log("Input is slug :", req.params.id_or_slug)
+
+            const contributor = await Contributor.getContributorById(req.params.id_or_slug);
+            return res.status(200).json( contributor );
+        }
+
     } catch (err) {
         return next(err);
     }
 });
+
+router.get("/:id/podcasts", async function (req, res, next) {
+    console.log("Fetching podcasts by contributor id")
+
+    try {
+
+        const podcastsList = await Contributor.getPodcastsByContributorId(req.params.id);
+
+        let podcasts = [];
+        
+        for (let podcast of podcastsList) {
+
+            const item = async () => await Podcast.getPodcastById(podcast.podcast_id); 
+            podcasts.push(item());
+            }
+
+        if (podcasts.length === 0) {
+            return res.status(200).json( {message: "No podcasts found for contributor"} );
+        } else {
+            return res.status(200).json( podcasts );
+        }
+
+    } catch (err) {
+        return next(err);
+    }
+});
+        
 
 module.exports = router
