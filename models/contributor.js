@@ -36,7 +36,7 @@ class Contributor {
         let whereExpressions = [];
         let queryValues = [];
 
-        const { name } = searchFilters; 
+        const { name, page, limit } = searchFilters; 
 
         // For each possible search term, add to whereExpressions and
         // queryValues so we can generate the right SQL
@@ -52,10 +52,38 @@ class Contributor {
 
         query += ` ORDER BY name`;
 
-        const result = await db.query(query, queryValues);
+        const response = await db.query(query, queryValues);
 
-        return  result.rows;
-    }
+        let pagination = [];
+
+         let total = (response.rows).length;
+
+         let pages =  Math.floor(total / (limit || 10));
+
+         if (page && limit) {
+            
+            total = (response.rows).length;
+
+            pages = Math.floor(total / limit) > 0 ? Math.floor(total / limit) : 1;
+
+            for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
+               if (response.rows[i]){
+                  pagination.push(response.rows[i]);
+               }
+            }
+
+         };
+
+         return { 
+                  "total_results": total, 
+                  "total_pages": pages, 
+                  "page" : +page, 
+                  "limit" : +limit,
+                  "page_results": pagination,  
+                  "full_results": response.rows  
+               } 
+
+      }
 
     static async fetchMedia(id) {
 
