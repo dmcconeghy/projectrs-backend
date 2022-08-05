@@ -3,9 +3,10 @@
 /** Routes for podcasts. */
 
 const express = require("express");
-const { BadRequestError } = require("../expressError");
+
 const Podcast = require("../models/podcast");
 const Tag = require("../models/tag");
+const Contributor = require("../models/contributor");
 
 
 const router = express.Router({ mergeParams: true });
@@ -17,7 +18,7 @@ const router = express.Router({ mergeParams: true });
  * - title (will find case-insensitive, partial matches)
  * - content (will find case-insensitive, partial matches)
  * - contributor (will find case-insensitive, partial matches)
- * 
+ * - 
  * 
 */
 
@@ -37,15 +38,13 @@ router.get("/", async function (req, res, next) {
     }
 });
 
-// !isNaN(req.params.id_or_slug
-
 router.get("/:id_or_slug", async function (req, res, next) {
     console.log("Fetching podcast by id or slug")
 
     try {
         
         if (!isNaN(req.params.id_or_slug)) {
-            console.log(parseInt(req.params.id_or_slug));
+            // console.log(parseInt(req.params.id_or_slug));
             console.log("Input is id number :", req.params.id_or_slug)
 
             const podcast = await Podcast.getPodcastById(req.params.id_or_slug);
@@ -64,17 +63,27 @@ router.get("/:id_or_slug", async function (req, res, next) {
     }
 });
 
+/**
+ * GET /:id/tags
+ * 
+ * Accepts a podcast_id and returns a list of tags associated with that podcast.
+ * 
+ * GET /25786/tags returns a list of tags associated with podcast 25786.  
+ * 
+ * ie. [{"tag_id": 2684,"name": "Africana","slug": "africana","count": 1}, {...}]
+ */
+
 router.get("/:id/tags", async function (req, res, next) {
-    console.log("Fetching tags by id")
+    console.log("Fetching tags for podcast")
     try {
-        console.debug(`id: ${req.params.id}`)
+    
 
         const tagsList = await Podcast.getTagsByPodcastId(req.params.id);
 
         let tags = []
 
         for (let tag of tagsList){
-            console.log(tag.tag_id)
+            
             const item = async () => await Tag.getTagById(tag.tag_id);
             tags.push(await item())
         }
@@ -88,5 +97,30 @@ router.get("/:id/tags", async function (req, res, next) {
         return next(err);
     }
 });
+
+router.get("/:id/contributors", async function (req, res, next) {
+    console.log("Fetching contributors for podcast")
+    try {
+
+        const contributorsList = await Podcast.getContributorsByPodcastId(req.params.id);
+
+        let contributors = []
+
+        for (let contributor of contributorsList){
+
+            const item = async () => await Contributor.getContributorById(contributor.contributor_id);
+            contributors.push(await item())
+        }
+
+        if (contributors.length === 0) {
+            return res.status(404).json({ message: "No contributors found" });
+        } else{
+            return res.status(200).json( contributors );
+        }
+    } catch (err) {
+        return next(err);
+    }
+});
+
 
 module.exports = router

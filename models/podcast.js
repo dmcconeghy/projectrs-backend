@@ -79,34 +79,42 @@ class Podcast {
          // whereExpressions.push(`content ILIKE $${queryValues.length}`);
       }
 
-      
-
       if (whereExpressions.length > 0) {
          query += ` WHERE ${whereExpressions.join(" OR ")}`;
       }
 
       query += ` ORDER BY date_created ASC`;
 
-      const result = await db.query(query, queryValues);
+      const response = await db.query(query, queryValues);
+
+      let pagination = [];
+
+      let total = (response.rows).length;
+
+      let pages =  Math.floor(total / (limit || 10));
 
       if (page && limit) {
          
-         let total = (result.rows).length;
+         total = (response.rows).length;
 
-         let pages = Math.floor(total / limit);
-
-         let subset = []
+         pages = Math.floor(total / limit);
 
          for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
-            if (result.rows[i]){
-               subset.push(result.rows[i])
+            if (response.rows[i]){
+               pagination.push(response.rows[i]);
             }
          }
 
-         return subset
-      }
-      
-      return result.rows;
+      };
+
+      return { 
+               "total_results": total, 
+               "total_pages": pages, 
+               "page" : +page, 
+               "limit" : +limit,
+               "page_results": pagination,  
+               "full_results": response.rows 
+            } 
    }
 
    static async getTagsByPodcastId(podcastId) {
