@@ -114,6 +114,28 @@ class Response {
       return await getMediaURL("response", id);
    }
 
+   static async getResponsesByContributorId(id){
+      const responses = await db.query(
+         `SELECT * FROM responses_contributors WHERE contributor_id = $1`,
+         [id]);
+      const response = responses.rows[0];
+
+      if (!response) throw new NotFoundError(`Response not found`);
+
+      return response;
+   }
+
+   static async getPodcastsByResponseId(id){
+      const podcasts = await db.query(
+         `SELECT * FROM podcast_responses WHERE response_id = $1`,
+         [id]);
+      const podcast = podcasts.rows[0];
+
+      if (!podcast) throw new NotFoundError(`Podcast not found`);
+
+      return podcast;
+   }
+
 }
 
 module.exports = Response;

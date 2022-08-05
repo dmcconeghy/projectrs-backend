@@ -7,6 +7,7 @@ const { getContributors } = require("../helpers/direct_queries");
 const { getJSContributors} = require("../helpers/json_queries");
 const Contributor = require("../models/contributor");
 const Podcast = require("../models/podcast");
+const Response = require("../models/response");
 
 const router = express.Router({ mergeParams: true });
 
@@ -79,6 +80,32 @@ router.get("/:id/podcasts", async function (req, res, next) {
             return res.status(200).json( {message: "No podcasts found for contributor"} );
         } else {
             return res.status(200).json( podcasts );
+        }
+
+    } catch (err) {
+        return next(err);
+    }
+});
+
+router.get("/:id/responses", async function (req, res, next) {
+    console.log("Fetching responses by contributor id")
+
+    try {
+
+        const responsesList = await Contributor.getResponsesByContributorId(req.params.id);
+
+        let responses = [];
+
+        for (let response of responsesList) {
+
+            const item = async () => await Response.getResponseById(response.response_id);
+            responses.push(item());
+        }
+
+        if (responses.length === 0) {
+            return res.status(200).json( {message: "No responses found for contributor"} );
+        } else {
+            return res.status(200).json( responses );
         }
 
     } catch (err) {

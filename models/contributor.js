@@ -100,6 +100,17 @@ class Contributor {
 
         return response;
     }
+
+    static async getResponsesByContributorId(id) {
+        const responses = await db.query(
+            `SELECT * FROM responses_contributors WHERE contributor_id = $1`,
+            [id]);
+        const response = responses.rows[0];
+
+        if (!response) throw new NotFoundError(`Response not found`); 
+
+        return response;
+    }
 }
 
 module.exports = Contributor;
