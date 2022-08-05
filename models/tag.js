@@ -60,23 +60,6 @@ class Tag {
 
       }
 
-      static async searchTags(name) {
-         let query = `SELECT * FROM tags`;
-         let whereExpressions = [];
-         let queryValues = [];
-         
-         if (name) {
-             whereExpressions.push("name ILIKE $1");
-             queryValues.push(`%${name}%`);
-             query += ` WHERE ${whereExpressions.join(" AND ")}`;
-             
-         } 
- 
-         const result = await db.query(query, queryValues);
-         return result.rows;
- 
-      }
-
       static async getTagBySlug(slug) {
         const tags = await db.query(
            `SELECT * FROM tags WHERE slug = $1`,
@@ -110,7 +93,23 @@ class Tag {
             return tagResult;
       }
 
-
+      // Deprecated by addition of search filters to "/" method
+      // static async searchTags(name) {
+      //    let query = `SELECT * FROM tags`;
+      //    let whereExpressions = [];
+      //    let queryValues = [];
+         
+      //    if (name) {
+      //        whereExpressions.push("name ILIKE $1");
+      //        queryValues.push(`%${name}%`);
+      //        query += ` WHERE ${whereExpressions.join(" AND ")}`;
+             
+      //    } 
+ 
+      //    const result = await db.query(query, queryValues);
+      //    return result.rows;
+ 
+      // }
 
 }
 
