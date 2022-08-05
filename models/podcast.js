@@ -97,7 +97,7 @@ class Podcast {
          
          total = (response.rows).length;
 
-         pages = Math.floor(total / limit);
+         pages = Math.floor(total / limit) > 0 ? Math.floor(total / limit) : 1;
 
          for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
             if (response.rows[i]){
