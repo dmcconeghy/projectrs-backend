@@ -1,5 +1,3 @@
-"use strict";
-
 /** Routes for podcasts. */
 
 const express = require("express");

@@ -1,5 +1,3 @@
-"use strict";
-
 /** Routes for podcasts. */
 
 const express = require("express");
@@ -17,7 +15,7 @@ router.get("/", async function (req, res, next) {
         
         const tags = await Tag.findAll(q);    
 
-        return res.status(200).json(tags);
+        return res.status(200).json( tags );
     } catch (err) {
         return next(err);
     }

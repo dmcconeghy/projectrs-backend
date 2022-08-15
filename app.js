@@ -1,5 +1,3 @@
-"use strict";
-
 /** Express app for jobly. */
 
 const express = require("express");

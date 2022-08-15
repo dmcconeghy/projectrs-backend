@@ -1,5 +1,3 @@
-"use strict"
-
 const db = require("../db");
 const { NotFoundError } = require("../expressError");
 const { getMediaURL } = require("../helpers/model_queries");
@@ -36,18 +34,22 @@ class Contributor {
         let whereExpressions = [];
         let queryValues = [];
 
-        const { name, page, limit } = searchFilters; 
+        const { name, bio, page, limit } = searchFilters; 
 
         // For each possible search term, add to whereExpressions and
         // queryValues so we can generate the right SQL
         if (name) {
             queryValues.push(`%${name}%`);
-            whereExpressions.push("name ILIKE $1");
-            
+            whereExpressions.push(`name ILIKE $${queryValues.length}`); 
+        }
+
+        if (bio) {
+            queryValues.push(`%${bio}%`);
+            whereExpressions.push(`bio_text ILIKE $${queryValues.length}`);
         }
 
         if (whereExpressions.length > 0) {
-            query += ` WHERE ${whereExpressions.join(" AND ")}`;
+            query += ` WHERE ${whereExpressions.join(" OR ")}`;
         }
 
         query += ` ORDER BY name`;
@@ -56,25 +58,24 @@ class Contributor {
 
         let pagination = [];
 
-         let total = (response.rows).length;
+        let total = (response.rows).length;
 
-         let pages =  Math.floor(total / (limit || 10));
+        let pages =  Math.floor(total / (limit || 10));
 
-         if (page && limit) {
-            
+        if (page && limit) {
+
             total = (response.rows).length;
 
             pages = Math.floor(total / limit) > 0 ? Math.floor(total / limit) : 1;
 
             for (let i = 0 + (page - 1)*limit; i < limit*page; i++){
-               if (response.rows[i]){
-                  pagination.push(response.rows[i]);
-               }
+                if (response.rows[i]){
+                    pagination.push(response.rows[i]);
+                }
             }
+        }
 
-         };
-
-         return { 
+        return { 
                   "total_results": total, 
                   "total_pages": pages, 
                   "page" : +page, 

@@ -1,5 +1,3 @@
-"use strict";
-
 /** Temporary Homepage */
 
 const express = require("express");

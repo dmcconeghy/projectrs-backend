@@ -1,5 +1,3 @@
-"use strict"
-
 const db = require("../db");
 const { NotFoundError } = require("../expressError");
 const { getMediaURL } = require("../helpers/model_queries");

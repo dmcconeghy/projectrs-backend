@@ -1,5 +1,3 @@
-"use strict"
-
 const db = require("../db");
 const { NotFoundError } = require("../expressError");
 const { sqlForPartialUpdate } = require("../helpers/sql");
@@ -26,6 +24,8 @@ class Tag {
             queryValues.push(`%${name}%`);
             whereExpressions.push(`name ILIKE $${queryValues.length}`);
          }
+
+         query += ` ORDER BY count DESC`;
 
          const response = await db.query(query, queryValues);
       

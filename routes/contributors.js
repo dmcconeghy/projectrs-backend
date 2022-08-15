@@ -1,10 +1,7 @@
-"use strict";
-
 /** Routes for contributors. */
 
 const express = require("express");
-const { getContributors } = require("../helpers/direct_queries");
-const { getJSContributors} = require("../helpers/json_queries");
+
 const Contributor = require("../models/contributor");
 const Podcast = require("../models/podcast");
 const Response = require("../models/response");
