@@ -10,6 +10,8 @@ const homeRoutes = require("./routes/home");
 const responsesRoutes = require("./routes/responses");
 const contributorsRoute = require("./routes/contributors");
 const testRoutes = require("./routes/test")
+const maintenanceRoutes = require("./routes/maintenance");
+
 const morgan = require("morgan");
 
 const app = express();
@@ -21,7 +23,8 @@ app.use(express.json());
 app.use(morgan("tiny"));
 
 app.use("/podcasts", podcastsEpisodes);
-app.use("/", homeRoutes);
+app.use("/", maintenanceRoutes);
+app.use("/home", homeRoutes);
 app.use("/tags", podcastsTags);
 app.use("/responses", responsesRoutes);
 app.use("/contributors", contributorsRoute);
